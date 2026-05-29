@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure Portfolio BUT 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. ENTÊTE IMPOSÉ (Toujours visible) -->
+    <header>
+        <div class="identity">[PRÉNOM] [NOM] - Portfolio BUT 2</div>
+        <div class="email">Contact : <a href="mailto:adresse.mail@exemple.fr" style="color: #cbd5e1;">adresse.mail@exemple.fr</a></div>
+    </header>
+
+    <!-- ARBORESCENCE À 4 PAGES PRINCIPALES -->
+    <nav class="main-nav">
+        <a href="accueil.html">1. Accueil</a>
+        <a href="technique.html">2. Technique</a>
+        <a href="suivi-de-projet.html" class="active">3. Suivi de projet</a>
+        <a href="integration.html">4. Intégration en entreprise</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- ========================================== -->
+        <!-- PAGE 3 : SUIVI DE PROJET (Même structure) -->
+        <!-- ========================================== -->
+        <section id="suivi-de-projet" class="page-section">
+            <h1>Page : Suivi de Projet</h1>
+            <p class="resume-page"><!-- Court texte résumant le contenu des sous-pages --></p>
+
+            <!-- NAVIGATION SECONDAIRE (Identique à la page Technique) -->
+            <nav class="sub-nav">
+                <a href="#suivi-souspage-desc1">Trace 2 : Planification</a>
+                <a href="#suivi-souspage-bilan1">Bilan : Gestion de projet</a>
+            </nav>
+
+            <div class="subpage-display">
+                <!-- Remplir ici avec le même modèle de sous-pages (Description ou Bilan) adapté au Suivi de projet -->
+                <p style="color: #64748b; font-style: italic;">[Utiliser la même structure de sous-pages que la page Technique]</p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure Portfolio BUT 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. ENTÊTE IMPOSÉ (Toujours visible) -->
+    <header>
+        <div class="identity">[PRÉNOM] [NOM] - Portfolio BUT 2</div>
+        <div class="email">Contact : <a href="mailto:adresse.mail@exemple.fr" style="color: #cbd5e1;">adresse.mail@exemple.fr</a></div>
+    </header>
+
+    <!-- ARBORESCENCE À 4 PAGES PRINCIPALES -->
+    <nav class="main-nav">
+        <a href="accueil.html">1. Accueil</a>
+        <a href="technique.html" class="active">2. Technique</a>
+        <a href="suivi-de-projet.html">3. Suivi de projet</a>
+        <a href="integration.html">4. Intégration en entreprise</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- ========================================== -->
+        <!-- PAGE 2 : TECHNIQUE (Structure Imposée) -->
+        <!-- ========================================== -->
+        <section id="technique" class="page-section">
+            <h1>Page : Technique</h1>
+            <p class="resume-page"><!-- Court texte résumant obligatoirement ce que contiennent les sous-pages de cette section --></p>
+
+            <!-- NAVIGATION SECONDAIRE (Système identique pour naviguer entre les sous-pages) -->
+            <nav class="sub-nav">
+                <a href="#tech-souspage-desc1">Trace 1 : Description</a>
+                <a href="#tech-souspage-bilan1">Bilan : Compétence X</a>
+            </nav>
+
+            <!-- EMPLACEMENT DE L'AFFICHAGE DES SOUS-PAGES -->
+            <div class="subpage-display">
+
+                <!-- Exemple de sous-page de Type A : Description (basée sur une trace) -->
+                <div id="tech-souspage-desc1" class="subpage-content">
+                    <h3>[Titre de la sous-page de description]</h3>
+
+                    <!-- Liste colorée obligatoire des savoir-faire élémentaires abordés -->
+                    <ul class="liste-sf-elementaires">
+                        <li>Savoir-faire élémentaire n°1 (ex: Configurer un serveur DHCP)</li>
+                        <li>Savoir-faire élémentaire n°2 (ex: Sécuriser les accès SSH)</li>
+                    </ul>
+
+                    <!-- Trace numérotée, titrée et légendée (Exigence : cadres/flèches sur points remarquables) -->
+                    <div class="trace-container">
+                        <div style="background: #e2e8f0; height: 150px; padding-top: 60px; color: #475569;">
+                            [Insérer l'image de la Trace avec cadres ou flèches identifiant les points remarquables]
+                        </div>
+                        <div class="trace-caption">Trace n°1 : [Titre précis de la trace] - Légende explicative</div>
+                    </div>
+
+                    <p>
+                        <strong>Descriptif général :</strong>
+                        <!-- Ce que représente la trace, explication de la légende, place dans le projet -->
+                    </p>
+
+                    <p>
+                        <strong>Descriptif des savoir-faire :</strong>
+                        <!-- Pourquoi et comment vous les avez utilisés, en faisant explicitement référence au numéro de la trace (ex: "Comme on le voit sur la Trace n°1...") et aux points remarquables mis en valeur (couleur requise sur les savoir-faire) -->
+                        Pour réaliser cette tâche, j'ai mis en œuvre le savoir-faire de <span class="highlight-sf">[Nom du SF en couleur]</span> afin de résoudre le problème identifié sur le repère [A] de la Trace n°1.
+                    </p>
+                </div>
+
+                <!-- Exemple de sous-page de Type B : Bilan / Analyse -->
+                <div id="tech-souspage-bilan1" class="subpage-content" style="margin-top: 40px;">
+                    <h3>[Titre du Bilan]</h3>
+
+                    <div class="bilan-bloc">
+                        <h4>Bilan sur le savoir-faire général : [Nom du SF Général]</h4>
+                        <p><strong>Résumé des savoir-faire élémentaires associés :</strong></p>
+                        <ul>
+                            <li>Rappel du contexte d'utilisation : <!-- ... --></li>
+                            <li>Contexte d'apprentissage : <!-- Vu en cours / Appris en stage / En autonomie chez soi --></li>
+                            <li>Difficultés d'apprentissage et/ou d'utilisation : <!-- ... --></li>
+                        </ul>
+
+                        <h4>Évaluation justifiée du niveau d'expertise :</h4>
+                        <p>
+                            Niveau auto-évalué : <span class="expertise-badge">Excellent / Moyen / etc.</span>
+                        </p>
+                        <p>
+                            <strong>Justification & Évolution :</strong>
+                            <!-- Comparaison obligatoire de votre niveau avant et après l'expérience de stage/alternance -->
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
+

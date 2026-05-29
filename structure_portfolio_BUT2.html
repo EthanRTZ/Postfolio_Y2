@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure Portfolio BUT 2</title>
+    <style>
+        /* BASE STYLE & DESIGN VARIETY (Muted cool tech palette) */
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 1. ENTÊTE IMPOSÉ (Toujours visible) */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            background-color: #1e293b;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header .identity {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        header .email {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+        }
+
+        /* NAVIGATION PRINCIPALE À 4 PAGES */
+        .main-nav {
+            display: flex;
+            background-color: #334155;
+            margin-top: 70px; /* Pour compenser le header fixe */
+            position: sticky;
+            top: 70px;
+            z-index: 999;
+        }
+        .main-nav a {
+            flex: 1;
+            text-align: center;
+            padding: 15px 0;
+            color: #f1f5f9;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s;
+            border-bottom: 3px solid transparent;
+        }
+        .main-nav a:hover, .main-nav a.active {
+            background-color: #475569;
+            border-bottom: 3px solid #38bdf8;
+        }
+
+        /* CONTENEUR PRINCIPAL */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* SECTION DE PAGE */
+        .page-section {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #0f172a;
+            border-left: 5px solid #38bdf8;
+            padding-left: 12px;
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+        h2 {
+            color: #1e293b;
+            font-size: 1.4rem;
+            margin-top: 25px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #475569;
+            font-size: 1.15rem;
+            margin-top: 20px;
+        }
+
+        /* NAVIGATION SECONDAIRE (SOUS-PAGES) - IDENTIQUE POUR LES 3 PAGES CONCERNÉES */
+        .sub-nav {
+            display: flex;
+            gap: 10px;
+            background: #f8fafc;
+            padding: 10px;
+            border-radius: 6px;
+            margin: 15px 0 25px 0;
+            border: 1px solid #e2e8f0;
+        }
+        .sub-nav a {
+            padding: 8px 16px;
+            background: #ffffff;
+            color: #475569;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            border: 1px solid #cbd5e1;
+            font-weight: 500;
+        }
+        .sub-nav a:hover {
+            background: #e2e8f0;
+            color: #0f172a;
+        }
+
+        /* BLOCS FORMALISÉS PAR LE DOCUMENT */
+        .highlight-sf {
+            font-weight: bold;
+            color: #2563eb; /* Couleur de mise en valeur exigée */
+            font-style: italic;
+        }
+        
+        .liste-sf-elementaires {
+            background-color: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+        .liste-sf-elementaires li {
+            color: #1e40af; /* Liste colorée des savoir-faire élémentaires */
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .trace-container {
+            border: 2px dashed #cbd5e1;
+            padding: 20px;
+            background: #fafafa;
+            text-align: center;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+        .trace-caption {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .bilan-bloc {
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        .expertise-badge {
+            display: inline-block;
+            background: #16a34a;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .illustration-placeholder {
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            padding: 40px;
+            text-align: center;
+            color: #94a3b8;
+            margin: 15px 0;
+            border-radius: 6px;
+        }
+
+        .conseil-box {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #78350f;
+            margin-top: 30px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. ENTÊTE IMPOSÉ (Toujours visible) -->
+    <header>
+        <div class="identity">[PRÉNOM] [NOM] - Portfolio BUT 2</div>
+        <div class="email">Contact : <a href="mailto:adresse.mail@exemple.fr" style="color: #cbd5e1;">adresse.mail@exemple.fr</a></div>
+    </header>
+
+    <!-- ARBORESCENCE À 4 PAGES PRINCIPALES -->
+    <nav class="main-nav">
+        <a href="#accueil" class="active">1. Accueil</a>
+        <a href="#technique">2. Technique</a>
+        <a href="#suivi-de-projet">3. Suivi de projet</a>
+        <a href="#integration">4. Intégration en entreprise</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- ========================================== -->
+        <!-- PAGE 1 : ACCUEIL (Contenu Imposé) -->
+        <!-- ========================================== -->
+        <section id="accueil" class="page-section">
+            <h1>Page d'Accueil</h1>
+            
+            <h2>Introduction</h2>
+            <p><!-- Présentation obligatoire des objectifs et du contenu du site --></p>
+
+            <h2>Contexte de l'Entreprise (Stage / Alternance)</h2>
+            <p><!-- Présentation de l'entreprise, des personnels impliqués, de leurs rôles, et de vos moyens de travail --></p>
+            
+            <div class="illustration-placeholder">
+                [Illustration directement en rapport avec le texte de l'entreprise]
+            </div>
+
+            <h2>Contexte du Sujet</h2>
+            <p><!-- Présentation de l'existant (ou non-existant) et ses problèmes, le sujet précis, les enjeux et objectifs de votre réalisation --></p>
+
+            <h2>Synthèse des Savoir-Faire Généraux</h2>
+            <p>
+                <!-- Synthèse des compétences mises en jeu. Mettre obligatoirement en valeur (en gras, couleur, ou via un lien) ceux détaillés dans les 3 autres pages -->
+                Exemple : Dans le cadre de ce projet, j'ai dû <span class="highlight-sf">[Savoir-Faire Général Réutilisé plus loin]</span> ainsi que <span class="highlight-sf">[Autre Savoir-Faire Général]</span>.
+            </p>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- PAGE 2 : TECHNIQUE (Structure Imposée) -->
+        <!-- ========================================== -->
+        <section id="technique" class="page-section">
+            <h1>Page : Technique</h1>
+            <p class="resume-page"><!-- Court texte résumant obligatoirement ce que contiennent les sous-pages de cette section --></p>
+
+            <!-- NAVIGATION SECONDAIRE (Système identique pour naviguer entre les sous-pages) -->
+            <nav class="sub-nav">
+                <a href="#tech-souspage-desc1">Trace 1 : Description</a>
+                <a href="#tech-souspage-bilan1">Bilan : Compétence X</a>
+            </nav>
+
+            <!-- EMPLACEMENT DE L'AFFICHAGE DES SOUS-PAGES -->
+            <div class="subpage-display">
+                
+                <!-- Exemple de sous-page de Type A : Description (basée sur une trace) -->
+                <div id="tech-souspage-desc1" class="subpage-content">
+                    <h3>[Titre de la sous-page de description]</h3>
+                    
+                    <!-- Liste colorée obligatoire des savoir-faire élémentaires abordés -->
+                    <ul class="liste-sf-elementaires">
+                        <li>Savoir-faire élémentaire n°1 (ex: Configurer un serveur DHCP)</li>
+                        <li>Savoir-faire élémentaire n°2 (ex: Sécuriser les accès SSH)</li>
+                    </ul>
+
+                    <!-- Trace numérotée, titrée et légendée (Exigence : cadres/flèches sur points remarquables) -->
+                    <div class="trace-container">
+                        <div style="background: #e2e8f0; height: 150px; padding-top: 60px; color: #475569;">
+                            [Insérer l'image de la Trace avec cadres ou flèches identifiant les points remarquables]
+                        </div>
+                        <div class="trace-caption">Trace n°1 : [Titre précis de la trace] - Légende explicative</div>
+                    </div>
+
+                    <p>
+                        <strong>Descriptif général :</strong> 
+                        <!-- Ce que représente la trace, explication de la légende, place dans le projet -->
+                    </p>
+
+                    <p>
+                        <strong>Descriptif des savoir-faire :</strong> 
+                        <!-- Pourquoi et comment vous les avez utilisés, en faisant explicitement référence au numéro de la trace (ex: "Comme on le voit sur la Trace n°1...") et aux points remarquables mis en valeur (couleur requise sur les savoir-faire) -->
+                        Pour réaliser cette tâche, j'ai mis en œuvre le savoir-faire de <span class="highlight-sf">[Nom du SF en couleur]</span> afin de résoudre le problème identifié sur le repère [A] de la Trace n°1.
+                    </p>
+                </div>
+
+                <!-- Exemple de sous-page de Type B : Bilan / Analyse -->
+                <div id="tech-souspage-bilan1" class="subpage-content" style="margin-top: 40px;">
+                    <h3>[Titre du Bilan]</h3>
+                    
+                    <div class="bilan-bloc">
+                        <h4>Bilan sur le savoir-faire général : [Nom du SF Général]</h4>
+                        <p><strong>Résumé des savoir-faire élémentaires associés :</strong></p>
+                        <ul>
+                            <li>Rappel du contexte d'utilisation : <!-- ... --></li>
+                            <li>Contexte d'apprentissage : <!-- Vu en cours / Appris en stage / En autonomie chez soi --></li>
+                            <li>Difficultés d'apprentissage et/ou d'utilisation : <!-- ... --></li>
+                        </ul>
+
+                        <h4>Évaluation justifiée du niveau d'expertise :</h4>
+                        <p>
+                            Niveau auto-évalué : <span class="expertise-badge">Excellent / Moyen / etc.</span>
+                        </p>
+                        <p>
+                            <strong>Justification & Évolution :</strong>
+                            <!-- Comparaison obligatoire de votre niveau avant et après l'expérience de stage/alternance -->
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- PAGE 3 : SUIVI DE PROJET (Même structure) -->
+        <!-- ========================================== -->
+        <section id="suivi-de-projet" class="page-section">
+            <h1>Page : Suivi de Projet</h1>
+            <p class="resume-page"><!-- Court texte résumant le contenu des sous-pages --></p>
+
+            <!-- NAVIGATION SECONDAIRE (Identique à la page Technique) -->
+            <nav class="sub-nav">
+                <a href="#suivi-souspage-desc1">Trace 2 : Planification</a>
+                <a href="#suivi-souspage-bilan1">Bilan : Gestion de projet</a>
+            </nav>
+
+            <div class="subpage-display">
+                <!-- Remplir ici avec le même modèle de sous-pages (Description ou Bilan) adapté au Suivi de projet -->
+                <p style="color: #64748b; font-style: italic;">[Utiliser la même structure de sous-pages que la page Technique]</p>
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- PAGE 4 : INTÉGRATION EN ENTREPRISE -->
+        <!-- ========================================== -->
+        <section id="integration" class="page-section">
+            <h1>Page : Intégration en Entreprise</h1>
+            <p class="resume-page"><!-- Court texte résumant le contenu des sous-pages --></p>
+
+            <!-- NAVIGATION SECONDAIRE (Identique aux autres pages) -->
+            <nav class="sub-nav">
+                <a href="#integration-souspage-desc1">Trace 3 : Communication</a>
+                <a href="#integration-souspage-bilan1">Bilan : Intégration</a>
+            </nav>
+
+            <div class="subpage-display">
+                <!-- Remplir ici avec le même modèle de sous-pages (Description ou Bilan) adapté à l'Intégration -->
+                <p style="color: #64748b; font-style: italic;">[Utiliser la même structure de sous-pages que la page Technique]</p>
+            </div>
+        </section>
+
+        <!-- RAPPEL DES CONSEILS PRATIQUES DU DOCUMENT -->
+        <div class="conseil-box">
+            <strong>💡 Conseils de cadrage issus de vos consignes :</strong>
+            <ul>
+                <li><strong>Volume recommandé :</strong> Ciblez idéalement 4 à 5 savoir-faire techniques généraux au total, illustrés chacun par 2 ou 3 traces pour être pleinement convaincant.</li>
+                <li><strong>Diversification :</strong> Variez si possible les domaines (Développement, Bases de Données, Architecture/Système/Réseau).</li>
+                <li><strong>Compacité :</strong> Limitez la taille de vos sous-pages pour éviter le défilement (scrolling) vertical excessif. Si une sous-page est trop longue, redécoupez-la en plusieurs sous-pages.</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>

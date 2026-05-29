@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure Portfolio BUT 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. ENTÊTE IMPOSÉ (Toujours visible) -->
+    <header>
+        <div class="identity">[PRÉNOM] [NOM] - Portfolio BUT 2</div>
+        <div class="email">Contact : <a href="mailto:adresse.mail@exemple.fr" style="color: #cbd5e1;">adresse.mail@exemple.fr</a></div>
+    </header>
+
+    <!-- ARBORESCENCE À 4 PAGES PRINCIPALES -->
+    <nav class="main-nav">
+        <a href="accueil.html">1. Accueil</a>
+        <a href="technique.html">2. Technique</a>
+        <a href="suivi-de-projet.html">3. Suivi de projet</a>
+        <a href="integration.html" class="active">4. Intégration en entreprise</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- ========================================== -->
+        <!-- PAGE 4 : INTÉGRATION EN ENTREPRISE -->
+        <!-- ========================================== -->
+        <section id="integration" class="page-section">
+            <h1>Page : Intégration en Entreprise</h1>
+            <p class="resume-page"><!-- Court texte résumant le contenu des sous-pages --></p>
+
+            <!-- NAVIGATION SECONDAIRE (Identique aux autres pages) -->
+            <nav class="sub-nav">
+                <a href="#integration-souspage-desc1">Trace 3 : Communication</a>
+                <a href="#integration-souspage-bilan1">Bilan : Intégration</a>
+            </nav>
+
+            <div class="subpage-display">
+                <!-- Remplir ici avec le même modèle de sous-pages (Description ou Bilan) adapté à l'Intégration -->
+                <p style="color: #64748b; font-style: italic;">[Utiliser la même structure de sous-pages que la page Technique]</p>
+            </div>
+        </section>
+
+        <!-- RAPPEL DES CONSEILS PRATIQUES DU DOCUMENT -->
+        <div class="conseil-box">
+            <strong>💡 Conseils de cadrage issus de vos consignes :</strong>
+            <ul>
+                <li><strong>Volume recommandé :</strong> Ciblez idéalement 4 à 5 savoir-faire techniques généraux au total, illustrés chacun par 2 ou 3 traces pour être pleinement convaincant.</li>
+                <li><strong>Diversification :</strong> Variez si possible les domaines (Développement, Bases de Données, Architecture/Système/Réseau).</li>
+                <li><strong>Compacité :</strong> Limitez la taille de vos sous-pages pour éviter le défilement (scrolling) vertical excessif. Si une sous-page est trop longue, redécoupez-la en plusieurs sous-pages.</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
+

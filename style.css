@@ -1,0 +1,196 @@
+/* BASE STYLE & DESIGN VARIETY (Muted cool tech palette) */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 1. ENTÊTE IMPOSÉ (Toujours visible) */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #1e293b;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header .identity {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+header .email {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+}
+
+/* NAVIGATION PRINCIPALE À 4 PAGES */
+.main-nav {
+    display: flex;
+    background-color: #334155;
+    margin-top: 70px; /* Pour compenser le header fixe */
+    position: sticky;
+    top: 70px;
+    z-index: 999;
+}
+.main-nav a {
+    flex: 1;
+    text-align: center;
+    padding: 15px 0;
+    color: #f1f5f9;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s;
+    border-bottom: 3px solid transparent;
+}
+.main-nav a:hover, .main-nav a.active {
+    background-color: #475569;
+    border-bottom: 3px solid #38bdf8;
+}
+
+/* CONTENEUR PRINCIPAL */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* SECTION DE PAGE */
+.page-section {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #0f172a;
+    border-left: 5px solid #38bdf8;
+    padding-left: 12px;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+h2 {
+    color: #1e293b;
+    font-size: 1.4rem;
+    margin-top: 25px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 8px;
+}
+h3 {
+    color: #475569;
+    font-size: 1.15rem;
+    margin-top: 20px;
+}
+
+/* NAVIGATION SECONDAIRE (SOUS-PAGES) - IDENTIQUE POUR LES 3 PAGES CONCERNÉES */
+.sub-nav {
+    display: flex;
+    gap: 10px;
+    background: #f8fafc;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 15px 0 25px 0;
+    border: 1px solid #e2e8f0;
+}
+.sub-nav a {
+    padding: 8px 16px;
+    background: #ffffff;
+    color: #475569;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    border: 1px solid #cbd5e1;
+    font-weight: 500;
+}
+.sub-nav a:hover {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+
+/* BLOCS FORMALISÉS PAR LE DOCUMENT */
+.highlight-sf {
+    font-weight: bold;
+    color: #2563eb; /* Couleur de mise en valeur exigée */
+    font-style: italic;
+}
+
+.liste-sf-elementaires {
+    background-color: #eff6ff;
+    border-left: 4px solid #3b82f6;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+.liste-sf-elementaires li {
+    color: #1e40af; /* Liste colorée des savoir-faire élémentaires */
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.trace-container {
+    border: 2px dashed #cbd5e1;
+    padding: 20px;
+    background: #fafafa;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 6px;
+}
+.trace-caption {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.bilan-bloc {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.expertise-badge {
+    display: inline-block;
+    background: #16a34a;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.illustration-placeholder {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    padding: 40px;
+    text-align: center;
+    color: #94a3b8;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+.conseil-box {
+    background: #fffbeb;
+    border-left: 4px solid #f59e0b;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #78350f;
+    margin-top: 30px;
+    border-radius: 4px;
+}
+
