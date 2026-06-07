@@ -1,0 +1,83 @@
+================================================================================
+COMPLÉMENT TECHNIQUE : TRACES DE GÉNIE LOGICIEL ET CYCLE DE VIE (TRACES 5 & 6)
+================================================================================
+Ce fichier contient l'intégralité des textes requis pour vos deux nouvelles 
+traces : le Débogueur (Trace 5) et le GDS (Trace 6). Comme vous l'avez spécifié, 
+ces éléments relèvent d'une nouvelle catégorie : le Génie Logiciel (Qualité, 
+Tests, Suivi de versions et Travail collaboratif).
+
+Note pour l'intégration HTML : Une couleur violette spécifique (#9333ea) a été 
+attribuée à ce nouveau domaine pour maintenir la cohérence de votre charte graphique.
+
+--------------------------------------------------------------------------------
+PARTIE A : SOUS-PAGES DE DESCRIPTION DES NOUVELLES TRACES
+--------------------------------------------------------------------------------
+
+=========================================
+SOUS-PAGE 5 : TRACE 5 (Debogeur2.png)
+=========================================
+
+[TITRE]
+Trace 5 : Diagnostic pas-à-pas et inspection de la mémoire d'exécution via le Débogueur interactif
+
+[LISTE DES SAVOIR-FAIRE ÉLÉMENTAIRES (SFE)]
+- <span style="color: #9333ea; font-weight: bold;">SFE 3.1 : Utiliser un outil de débogage avancé pour inspecter l'état de la mémoire, tracer la pile d'appels et suivre la valeur des variables à l'exécution.</span>
+- <span style="color: #9333ea; font-weight: bold;">SFE 3.2 : Isoler et corriger des anomalies logiques ou des régressions applicatives par l'usage de points d'arrêt (breakpoints) stratégiques.</span>
+
+[LÉGENDE DE LA TRACE]
+Figure 5 : Session de débogage active sous l'environnement WinDev 2025 au sein de l'événement de sélection de la COMBO_Statut, illustrant l'arrêt sur breakpoint, le suivi du contexte mémoire local et la cartographie complète de l'enregistrement de données Contrat.
+
+[DESCRIPTIF GÉNÉRAL DE LA TRACE]
+La Trace 5 capture l'outil de débogage de WinDev en pleine action sur le code de mon application de gestion RH. Lors de la phase de test de la fenêtre principale (FEN_Base), j'ai dû analyser un comportement anormal lors du changement de statut d'un contrat utilisateur. Cette trace se situe à une étape clé de mon stage : la phase de fiabilisation et de recette. Le débogueur permet d'interrompre l'exécution du programme à une ligne précise pour comprendre exactement comment les variables évoluent en mémoire vive, garantissant ainsi l'absence de crashs ou d'effets de bord lors de l'utilisation de l'application par le client final.
+
+[DESCRIPTIF DES SAVOIR-FAIRE EN RELATION AVEC LES POINTS REMARQUABLES]
+L'utilisation méthodique de cet outil valide le <span style="color: #9333ea;">SFE 3.1 (Inspecter l'état de la mémoire et des variables)</span>. Ce savoir-faire est directement associé à deux repères majeurs : le **[Cadre Orange]** à gauche et le **[Cadre Bleu]** à droite. Le cadre orange montre le suivi dynamique des expressions locales, indiquant par exemple que l'indice de ligne courant `NbLigne` vaut exactement 9. Le cadre bleu, quant à lui, est une preuve avancée d'inspection mémoire : il affiche la structure complète et détaillée du tampon système du fichier `Contrat` (`IDContrat = 44`, `SocieteContrat = CRI`, `Statut = Ouvrier`). Cela atteste de ma capacité à lire et interpréter l'état réel des structures de données en RAM pendant l'exécution.
+
+En parallèle, j'ai mis en œuvre le <span style="color: #9333ea;">SFE 3.2 (Isoler des anomalies par point d'arrêt)</span>. Ce processus de diagnostic est mis en évidence par le **[Cadre Violet]** sur le ruban supérieur (bouton "Point d'arrêt") ainsi que par la flèche jaune d'exécution située à la ligne 13 dans l'éditeur de code central. J'ai positionné ce point d'arrêt juste avant l'exécution de la fonction système `HLitRecherchePremier`. Cela prouve que je sais intercepter le flux logique de l'application au moment critique pour valider que les paramètres transmis (ici `gnEmployerCourantGlobal`) sont corrects avant que le programme ne poursuive son traitement ou n'interroge la base de données.
+
+=========================================
+SOUS-PAGE 6 : TRACE 6 (GDS.png)
+=========================================
+
+[TITRE]
+Trace 6 : Gestion de versions, traçabilité du code source et travail collaboratif via le Gestionnaire de Sources (GDS)
+
+[LISTE DES SAVOIR-FAIRE ÉLÉMENTAIRES (SFE)]
+- <span style="color: #9333ea; font-weight: bold;">SFE 3.3 : Travailler dans un contexte collaboratif ou industriel en exploitant un système de gestion de versions centralisé pour sécuriser et fusionner les sources.</span>
+- <span style="color: #9333ea; font-weight: bold;">SFE 3.4 : Administrer et suivre le cycle de vie des composants logiciels à travers l'historique des révisions et le contrôle des jetons d'extraction.</span>
+
+[LÉGENDE DE LA TRACE]
+Figure 6 : Console d'administration du Gestionnaire de Sources (GDS) intégré à WinDev, affichant l'arborescence des modules applicatifs de l'entreprise et l'état d'avancement des versions des fenêtres et états d'impression.
+
+[DESCRIPTIF GÉNÉRAL DE LA TRACE]
+La Trace 6 présente l'interface du Gestionnaire de Sources (GDS) propriétaire de PC SOFT, configuré sur le serveur de mon entreprise d'accueil. En milieu professionnel, il est inconcevable de développer sans un outil de contrôle de version. Cette trace démontre comment mon projet de stage est structuré et sécurisé au sein du dépôt de l'entreprise. Le GDS permet de sauvegarder chaque modification, de revenir en arrière en cas d'erreur, et d'organiser le travail lorsque plusieurs développeurs ou testeurs interviennent sur la même application.
+
+[DESCRIPTIF DES SAVOIR-FAIRE EN RELATION AVEC LES POINTS REMARQUABLES]
+Cette interface concrétise le <span style="color: #9333ea;">SFE 3.3 (Exploiter un système de gestion de versions centralisé)</span>, repérable via le **[Cadre Bleu/Violet]** dans le bandeau supérieur. Ce panneau met en avant les commandes fondamentales du flux de travail collaboratif : "Tout récupérer" (mise à jour du projet local), "Réintégrer" (validation et envoi des modifications sur le serveur), et "Comparer" (analyse des différences de code). Cela prouve que j'assimile les concepts de synchronisation de code essentiels au travail en équipe de développement.
+
+De plus, le <span style="color: #9333ea;">SFE 3.4 (Administrer le cycle de vie des composants)</span> est illustré par le **[Cadre Rose]** à gauche et le **[Cadre Vert]** central. Le cadre rose montre la structure ordonnée des modules de l'entreprise (GDS, Themes, Gestiflex, etc.). Le cadre vert expose la liste des fichiers avec leur numéro de révision précis (comme `FEN_AjoutEnfant.wdw` qui est à sa 10ème version, ou `FEN_AjoutArretTrabail.wdw` à sa 8ème version). Ce suivi strict des modifications démontre ma rigueur dans la gestion du cycle de vie du logiciel, garantissant une traçabilité totale de chaque évolution apportée à l'IHM et aux modules de l'application de gestion RH.
+
+
+--------------------------------------------------------------------------------
+PARTIE B : SOUS-PAGE BILAN ET ANALYSE (NOUVEAU BLOC DE GÉNIE LOGICIEL)
+--------------------------------------------------------------------------------
+
+================================================================================
+BLOC DE BILAN 3 : GÉNIE LOGICIEL, QUALITÉ ET GESTION DE CONFIGURATION
+================================================================================
+
+[SAVOIR-FAIRE GÉNÉRAL VISÉ]
+SFG 3 : Assurer la qualité du code applicatif et collaborer efficacement au sein d'un écosystème de développement industriel (Domaine : Génie Logiciel)
+
+[RÉSUMÉ DES SAVOIR-FAIRE ÉLÉMENTAIRES ASSOCIÉS & CONTEXTE D'UTILISATION]
+Ce troisième bloc thématique rassemble mes compétences d'ingénierie logicielle à travers l'association de la **Trace 5** (Le Débogueur applicatif) et de la **Trace 6** (Le Gestionnaire de Sources - GDS). Durant mon stage, j'ai compris que développer du code fonctionnel n'était qu'une partie du travail : il fallait impérativement en assurer la robustesse et la traçabilité. J'ai utilisé le débogueur interactif au quotidien pour inspecter la mémoire, décortiquer les structures relationnelles à l'exécution et poser des points d'arrêt pour résoudre les bugs d'IHM (SFE 3.1, SFE 3.2). Pour sécuriser ces corrections et partager mes avancées avec l'équipe technique, j'ai piloté l'intégration de mes fichiers dans le référentiel d'entreprise en gérant le cycle de vie et les versions des composants via le GDS (SFE 3.3, SFE 3.4).
+
+[CONTEXTE D'APPRENTISSAGE]
+À l'IUT, dans le cadre du BUT Informatique, les concepts de gestion de versions sont étudiés principalement à travers l'outil Git en ligne de commande, et la qualité logicielle est abordée via des tests unitaires standardisés (modules R2.02 / R3.04). En entreprise, j'ai dû faire preuve d'adaptabilité en transposant ces compétences théoriques universelles sur les outils natifs et intégrés de la suite PC SOFT (WinDev). L'usage du débogueur visuel pas-à-pas et la logique de verrouillage exclusif par jeton propre au GDS (différente de la logique de branches de Git) ont été assimilés en autonomie en analysant le workflow de l'équipe et en suivant les bonnes pratiques de configuration de mon maître de stage.
+
+[DIFFICULTÉS RENCONTRÉES & SOLUTIONS]
+La principale difficulté concernant le GDS résidait dans le mécanisme d'extraction exclusive. Si un autre membre de l'équipe avait extrait une fenêtre pour maintenance, l'élément m'était verrouillé en modification. J'ai dû apprendre à planifier mes tâches de développement en amont et à utiliser la fonction "Comparer" pour visualiser les écarts de code avant de réintégrer mes sources pour éviter tout conflit. Concernant le débogage, la difficulté majeure a été de suivre des variables globales ou des tampons de fichiers de données (`Contrat`) dont l'état changeait de façon transverse sur plusieurs fenêtres simultanées. J'ai résolu cela en configurant des "points d'arrêt conditionnels" et des expressions espionnes dans la liste des éléments surveillés pour n'interrompre le programme que lorsque des critères précis étaient atteints.
+
+[ÉVALUATION JUSTIFIÉE DU NIVEAU D'EXPERTISE]
+**Niveau d'expertise auto-évalué : TRÈS BIEN**
+*Justification et comparaison Avant/Après :* Avant mon stage, ma vision du contrôle de version se résumait à l'usage basique de Git pour des projets étudiants individuels ou en binômes, et mon débogage consistait souvent à insérer des affichages textuels sommaires dans la console (ex: `print` ou `System.out.println`). Grâce à cette expérience industrielle, j'ai acquis le réflexe d'utiliser un débogueur professionnel (Trace 5) pour cartographier proprement la mémoire et diagnostiquer des erreurs de manière scientifique. De plus, manipuler au quotidien le GDS d'une entreprise (Trace 6) sur un projet de plus de 30 fenêtres et états d'impression m'a conféré la maturité nécessaire pour intégrer n'importe quelle équipe de développement en respectant ses contraintes de traçabilité et de livraison.

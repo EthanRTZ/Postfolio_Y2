@@ -1,60 +1,132 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Structure Portfolio BUT 2</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Intégration en entreprise - Portfolio BUT 2</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- 1. ENTÊTE IMPOSÉ (Toujours visible) -->
-    <header>
-        <div class="identity">[PRÉNOM] [NOM] - Portfolio BUT 2</div>
-        <div class="email">Contact : <a href="mailto:adresse.mail@exemple.fr" style="color: #cbd5e1;">adresse.mail@exemple.fr</a></div>
-    </header>
+<header>
+  <h1>[PRÉNOM] [NOM] - Portfolio BUT 2</h1>
+  <div class="contact">Contact : <a href="mailto:adresse.mail@exemple.fr">adresse.mail@exemple.fr</a></div>
+</header>
 
-    <!-- ARBORESCENCE À 4 PAGES PRINCIPALES -->
-    <nav class="main-nav">
-        <a href="accueil.html">1. Accueil</a>
-        <a href="technique.html">2. Technique</a>
-        <a href="suivi-de-projet.html">3. Suivi de projet</a>
-        <a href="integration.html" class="active">4. Intégration en entreprise</a>
-    </nav>
+<nav class="main-nav">
+  <a href="accueil.html">Accueil</a>
+  <a href="technique.html">Technique</a>
+  <a href="suivi-de-projet.html">Suivi de projet</a>
+  <a href="integration.html" class="active">Intégration en entreprise</a>
+</nav>
 
-    <div class="container">
+<main class="trace-page">
+  <h1 class="page-title">Page : Intégration en entreprise</h1>
+  <p>Cette page regroupe deux traces qui témoignent de mon adaptation aux outils et aux méthodes de travail de l'entreprise : l'utilisation du <strong>débogueur</strong> et l'utilisation des outils d'<strong>audit statique et dynamique</strong>.</p>
 
-        <!-- ========================================== -->
-        <!-- PAGE 4 : INTÉGRATION EN ENTREPRISE -->
-        <!-- ========================================== -->
-        <section id="integration" class="page-section">
-            <h1>Page : Intégration en Entreprise</h1>
-            <p class="resume-page"><!-- Court texte résumant le contenu des sous-pages --></p>
+  <nav class="sub-nav">
+    <button type="button" class="active" data-target="trace1">Trace 1 — Débogueur</button>
+    <button type="button" data-target="trace2">Trace 2 — Audit statique & dynamique</button>
+    <button type="button" data-target="bilan">Bilan & analyse</button>
+  </nav>
 
-            <!-- NAVIGATION SECONDAIRE (Identique aux autres pages) -->
-            <nav class="sub-nav">
-                <a href="#integration-souspage-desc1">Trace 3 : Communication</a>
-                <a href="#integration-souspage-bilan1">Bilan : Intégration</a>
-            </nav>
+  <p class="subpage-switch-hint">Les boutons changent le contenu affiché comme si tu changeais de sous-page.</p>
 
-            <div class="subpage-display">
-                <!-- Remplir ici avec le même modèle de sous-pages (Description ou Bilan) adapté à l'Intégration -->
-                <p style="color: #64748b; font-style: italic;">[Utiliser la même structure de sous-pages que la page Technique]</p>
-            </div>
-        </section>
+  <!-- ============ TRACE 1 / TRACE 5 (Débogueur) ============ -->
+  <section id="trace1" class="subpage-content active" data-subpage="trace1">
+    <h2>Trace 5 : Diagnostic pas-à-pas et inspection de la mémoire d'exécution via le Débogueur interactif</h2>
 
-        <!-- RAPPEL DES CONSEILS PRATIQUES DU DOCUMENT -->
-        <div class="conseil-box">
-            <strong>💡 Conseils de cadrage issus de vos consignes :</strong>
-            <ul>
-                <li><strong>Volume recommandé :</strong> Ciblez idéalement 4 à 5 savoir-faire techniques généraux au total, illustrés chacun par 2 ou 3 traces pour être pleinement convaincant.</li>
-                <li><strong>Diversification :</strong> Variez si possible les domaines (Développement, Bases de Données, Architecture/Système/Réseau).</li>
-                <li><strong>Compacité :</strong> Limitez la taille de vos sous-pages pour éviter le défilement (scrolling) vertical excessif. Si une sous-page est trop longue, redécoupez-la en plusieurs sous-pages.</li>
-            </ul>
+    <h3>Savoir-faire élémentaires mobilisés</h3>
+    <ul class="sf-list">
+      <li><span style="color: #9333ea; font-weight: bold;">SFE 3.1 : Utiliser un outil de débogage avancé pour inspecter l'état de la mémoire, tracer la pile d'appels et suivre la valeur des variables à l'exécution.</span></li>
+      <li><span style="color: #9333ea; font-weight: bold;">SFE 3.2 : Isoler et corriger des anomalies logiques ou des régressions applicatives par l'usage de points d'arrêt (breakpoints) stratégiques.</span></li>
+    </ul>
+
+    <div class="trace-layout">
+      <div class="trace-media">
+        <div class="trace-zone">
+          <img src="image/Debogeur2.png" alt="Trace 5 - Débogueur">
         </div>
+        <p class="trace-legend"><strong>Figure 5 :</strong> Session de débogage active sous l'environnement WinDev 2025 au sein de l'événement de sélection de la COMBO_Statut, illustrant l'arrêt sur breakpoint, le suivi du contexte mémoire local et la cartographie complète de l'enregistrement de données Contrat.</p>
+      </div>
 
+      <div class="trace-content">
+        <h3>Descriptif général de la trace</h3>
+        <p>La Trace 5 capture l'outil de débogage de WinDev en pleine action sur le code de mon application de gestion RH. Lors de la phase de test de la fenêtre principale (FEN_Base), j'ai dû analyser un comportement anormal lors du changement de statut d'un contrat utilisateur. Cette trace se situe à une étape clé de mon stage : la phase de fiabilisation et de recette. Le débogueur permet d'interrompre l'exécution du programme à une ligne précise pour comprendre exactement comment les variables évoluent en mémoire vive, garantissant ainsi l'absence de crashs ou d'effets de bord lors de l'utilisation de l'application par le client final.</p>
+
+        <h3>Descriptif des savoir-faire en relation avec les points remarquables</h3>
+        <p>L'utilisation méthodique de cet outil valide le <span style="color: #9333ea; font-weight: bold;">SFE 3.1 (Inspecter l'état de la mémoire et des variables)</span>. Ce savoir-faire est directement associé à deux repères majeurs : le <strong>[Cadre Orange]</strong> à gauche et le <strong>[Cadre Bleu]</strong> à droite. Le cadre orange montre le suivi dynamique des expressions locales, indiquant par exemple que l'indice de ligne courant <code>NbLigne</code> vaut exactement 9. Le cadre bleu, quant à lui, est une preuve avancée d'inspection mémoire : il affiche la structure complète et détaillée du tampon système du fichier <code>Contrat</code> (<code>IDContrat = 44</code>, <code>SocieteContrat = CRI</code>, <code>Statut = Ouvrier</code>). Cela atteste de ma capacité à lire et interpréter l'état réel des structures de données en RAM pendant l'exécution.</p>
+
+        <p>En parallèle, j'ai mis en œuvre le <span style="color: #9333ea; font-weight: bold;">SFE 3.2 (Isoler des anomalies par point d'arrêt)</span>. Ce processus de diagnostic est mis en évidence par le <strong>[Cadre Violet]</strong> sur le ruban supérieur (bouton "Point d'arrêt") ainsi que par la flèche jaune d'exécution située à la ligne 13 dans l'éditeur de code central. J'ai positionné ce point d'arrêt juste avant l'exécution de la fonction système <code>HLitRecherchePremier</code>. Cela prouve que je sais intercepter le flux logique de l'application au moment critique pour valider que les paramètres transmis (ici <code>gnEmployerCourantGlobal</code>) sont corrects avant que le programme ne poursuive son traitement ou n'interroge la base de données.</p>
+      </div>
     </div>
+  </section>
+
+  <!-- ============ TRACE 2 ============ -->
+  <section id="trace2" class="subpage-content" data-subpage="trace2">
+    <h2>Sous-page — Trace 2 : Utilisation de l'audit statique et dynamique</h2>
+
+    <h3>Savoir-faire élémentaires mobilisés</h3>
+    <ul class="sf-list">
+      <li><span class="sf sf-bleu">Utiliser un outil d'analyse statique</span></li>
+      <li><span class="sf sf-vert">Utiliser un outil d'analyse dynamique</span></li>
+      <li><span class="sf sf-orange">Corriger son code selon les normes de qualité</span></li>
+    </ul>
+
+    <div class="trace-layout">
+      <div class="trace-media">
+        <div class="trace-zone">[Insérer ici la capture de l'outil d'audit — SonarQube, valgrind, profiler, etc. Cadres : A = code smell détecté, B = vulnérabilité, C = correction effectuée]</div>
+        <p class="trace-legend"><strong>Trace n°2 :</strong> Résultats d'analyse de qualité du code</p>
+      </div>
+
+      <div class="trace-content">
+        <h3>Descriptif général</h3>
+        <p>La Trace n°2 illustre l'utilisation des outils d'audit mis en place dans l'entreprise pour garantir la qualité et la sécurité du code. C'est une pratique nouvelle pour moi, intégrée durant le stage.</p>
+
+        <h3>Descriptif des savoir-faire</h3>
+        <p>J'ai utilisé un outil d'<span class="sf sf-bleu">analyse statique</span> pour détecter les défauts dès l'écriture du code (repère [A] de la Trace n°2), un outil d'<span class="sf sf-vert">analyse dynamique</span> pour observer son exécution (repère [B]), et appris à <span class="sf sf-orange">corriger mon code</span> en suivant les normes de qualité de l'équipe (repère [C]).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BILAN ============ -->
+  <section id="bilan" class="subpage-content" data-subpage="bilan">
+    <h2>Sous-page — Bilan & analyse</h2>
+
+    <div class="bilan-block">
+      <h3>Savoir-faire général n°1 : S'approprier les outils et méthodes de travail de l'entreprise</h3>
+
+      <p><strong>Résumé des savoir-faire élémentaires associés :</strong></p>
+      <ul class="sf-list">
+        <li><strong>Rappel du contexte :</strong> illustré par les <em>Traces n°1 et n°2</em>, qui montrent la prise en main d'outils professionnels.</li>
+        <li><strong>Contexte d'apprentissage :</strong> outils non vus en cours, appris directement en entreprise avec l'aide du tuteur et de la documentation interne.</li>
+        <li><strong>Difficultés rencontrées :</strong> comprendre le fonctionnement avancé du débogueur et interpréter correctement les rapports d'audit.</li>
+      </ul>
+
+      <p><strong>Évaluation justifiée :</strong></p>
+      <p>Niveau avant le stage : <span class="niveau">Faible</span> &nbsp;→&nbsp; Niveau après : <span class="niveau">Bon</span></p>
+      <p>Ces outils sont désormais des réflexes dans ma manière de coder et de vérifier mon travail.</p>
+    </div>
+
+    <div class="bilan-block">
+      <h3>Savoir-faire général n°2 : Gagner en autonomie dans un environnement professionnel</h3>
+
+      <p><strong>Résumé des savoir-faire élémentaires associés :</strong></p>
+      <ul class="sf-list">
+        <li><strong>Rappel du contexte :</strong> les <em>Traces n°1 et n°2</em> montrent ma capacité à diagnostiquer et corriger seul, sans solliciter systématiquement le tuteur.</li>
+        <li><strong>Contexte d'apprentissage :</strong> développée progressivement durant le stage, en s'appuyant sur les outils et la documentation interne.</li>
+        <li><strong>Difficultés rencontrées :</strong> trouver le bon équilibre entre autonomie et demande d'aide au tuteur.</li>
+      </ul>
+
+      <p><strong>Évaluation justifiée :</strong></p>
+      <p>Niveau avant le stage : <span class="niveau">Faible à moyen</span> &nbsp;→&nbsp; Niveau après : <span class="niveau">Bon</span></p>
+      <p>L'autonomie acquise dépasse le cadre purement technique : elle inclut aussi la recherche d'information, la lecture de documentation, et la prise d'initiative mesurée.</p>
+    </div>
+  </section>
+</main>
+
+<footer>Portfolio BUT 2 - [PRÉNOM] [NOM]</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
-

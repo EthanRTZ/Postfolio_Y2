@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Structure Portfolio BUT 2</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Accueil - Portfolio BUT 2</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- 1. ENTÊTE IMPOSÉ (Toujours visible) -->
-    <header>
-        <div class="identity">[PRÉNOM] [NOM] - Portfolio BUT 2</div>
-        <div class="email">Contact : <a href="mailto:adresse.mail@exemple.fr" style="color: #cbd5e1;">adresse.mail@exemple.fr</a></div>
-    </header>
+<header>
+  <h1>[PRÉNOM] [NOM] - Portfolio BUT 2</h1>
+  <div class="contact">Contact : <a href="mailto:adresse.mail@exemple.fr">adresse.mail@exemple.fr</a></div>
+</header>
 
-    <!-- ARBORESCENCE À 4 PAGES PRINCIPALES -->
-    <nav class="main-nav">
-        <a href="accueil.html" class="active">1. Accueil</a>
-        <a href="technique.html">2. Technique</a>
-        <a href="suivi-de-projet.html">3. Suivi de projet</a>
-        <a href="integration.html">4. Intégration en entreprise</a>
-    </nav>
+<nav class="main-nav">
+  <a href="accueil.html" class="active">Accueil</a>
+  <a href="technique.html">Technique</a>
+  <a href="suivi-de-projet.html">Suivi de projet</a>
+  <a href="integration.html">Intégration en entreprise</a>
+</nav>
 
-    <div class="container">
+<main>
+  <h1 class="page-title">Bienvenue sur mon portfolio</h1>
 
-        <!-- ========================================== -->
-        <!-- PAGE 1 : ACCUEIL (Contenu Imposé) -->
-        <!-- ========================================== -->
-        <section id="accueil" class="page-section">
-            <h1>Page d'Accueil</h1>
+  <h2>Introduction</h2>
+  <p>Ce portfolio présente une synthèse de mon expérience de stage / alternance réalisée au cours de ma deuxième année de BUT Informatique. Il a pour objectif de mettre en lumière les savoir-faire que j'ai développés ou consolidés, à travers des traces concrètes issues de mon activité en entreprise.</p>
+  <p>Il s'articule autour de trois axes principaux : la dimension <strong>technique</strong>, le <strong>suivi de projet</strong>, et l'<strong>intégration en entreprise</strong>.</p>
 
-            <h2>Introduction</h2>
-            <p><!-- Présentation obligatoire des objectifs et du contenu du site --></p>
+  <h2>Contexte de l'entreprise</h2>
+  <p>[À compléter : présentation de l'entreprise — secteur d'activité, taille, mission. Personnes impliquées dans le stage : tuteur, équipe, rôles. Moyens de travail mis à disposition : matériel, logiciels, environnement de développement, etc.]</p>
 
-            <h2>Contexte de l'Entreprise (Stage / Alternance)</h2>
-            <p><!-- Présentation de l'entreprise, des personnels impliqués, de leurs rôles, et de vos moyens de travail --></p>
+  <div class="illu-accueil">[Illustration en rapport avec l'entreprise — logo, photo des locaux, schéma d'organisation…]</div>
 
-            <div class="illustration-placeholder">
-                [Illustration directement en rapport avec le texte de l'entreprise]
-            </div>
+  <h2>Contexte du sujet</h2>
+  <p>[À compléter : description du sujet du stage. Existant (ou absence d'existant) et problèmes que cela pose. Enjeux et objectifs de la réalisation : ce que l'entreprise attend, à quoi sert le projet, quelles contraintes encadrent le travail.]</p>
 
-            <h2>Contexte du Sujet</h2>
-            <p><!-- Présentation de l'existant (ou non-existant) et ses problèmes, le sujet précis, les enjeux et objectifs de votre réalisation --></p>
+  <div class="illu-accueil">[Illustration liée au sujet — capture du projet, schéma fonctionnel…]</div>
 
-            <h2>Synthèse des Savoir-Faire Généraux</h2>
-            <p>
-                <!-- Synthèse des compétences mises en jeu. Mettre obligatoirement en valeur (en gras, couleur, ou via un lien) ceux détaillés dans les 3 autres pages -->
-                Exemple : Dans le cadre de ce projet, j'ai dû <span class="highlight-sf">[Savoir-Faire Général Réutilisé plus loin]</span> ainsi que <span class="highlight-sf">[Autre Savoir-Faire Général]</span>.
-            </p>
-        </section>
+  <h2>Synthèse des savoir-faire généraux</h2>
+  <p>Au cours de ce stage, j'ai été amené à mobiliser et développer plusieurs savoir-faire généraux, détaillés dans les pages suivantes :</p>
 
-    </div>
+  <h3>Côté technique</h3>
+  <ul class="sf-list">
+    <li><a href="technique.html" class="sf-link">Savoir concevoir une solution informatique adaptée à un besoin</a></li>
+    <li><a href="technique.html" class="sf-link">Savoir développer et implémenter des solutions techniques</a> (incluant la manipulation de bases de données)</li>
+  </ul>
+
+  <h3>Côté suivi de projet</h3>
+  <ul class="sf-list">
+    <li><a href="suivi-de-projet.html" class="sf-link">Savoir utiliser des outils de suivi et de gestion de projet</a></li>
+    <li><a href="suivi-de-projet.html" class="sf-link">Savoir organiser son travail dans le temps</a></li>
+  </ul>
+
+  <h3>Côté intégration en entreprise</h3>
+  <ul class="sf-list">
+    <li><a href="integration.html" class="sf-link">Savoir s'approprier les outils et méthodes de travail de l'entreprise</a></li>
+    <li><a href="integration.html" class="sf-link">Savoir gagner en autonomie dans un environnement professionnel</a></li>
+  </ul>
+
+  <p>D'autres savoir-faire secondaires (rédaction, communication, lecture de code existant…) ont également été mobilisés mais ne font pas l'objet d'un bilan dédié.</p>
+</main>
+
+<footer>Portfolio BUT 2 - [PRÉNOM] [NOM]</footer>
 
 </body>
 </html>
-

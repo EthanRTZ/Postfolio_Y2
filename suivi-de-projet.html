@@ -1,50 +1,131 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Structure Portfolio BUT 2</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Suivi de projet - Portfolio BUT 2</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- 1. ENTÊTE IMPOSÉ (Toujours visible) -->
-    <header>
-        <div class="identity">[PRÉNOM] [NOM] - Portfolio BUT 2</div>
-        <div class="email">Contact : <a href="mailto:adresse.mail@exemple.fr" style="color: #cbd5e1;">adresse.mail@exemple.fr</a></div>
-    </header>
+<header>
+  <h1>[PRÉNOM] [NOM] - Portfolio BUT 2</h1>
+  <div class="contact">Contact : <a href="mailto:adresse.mail@exemple.fr">adresse.mail@exemple.fr</a></div>
+</header>
 
-    <!-- ARBORESCENCE À 4 PAGES PRINCIPALES -->
-    <nav class="main-nav">
-        <a href="accueil.html">1. Accueil</a>
-        <a href="technique.html">2. Technique</a>
-        <a href="suivi-de-projet.html" class="active">3. Suivi de projet</a>
-        <a href="integration.html">4. Intégration en entreprise</a>
-    </nav>
+<nav class="main-nav">
+  <a href="accueil.html">Accueil</a>
+  <a href="technique.html">Technique</a>
+  <a href="suivi-de-projet.html" class="active">Suivi de projet</a>
+  <a href="integration.html">Intégration en entreprise</a>
+</nav>
 
-    <div class="container">
+<main class="trace-page">
+  <h1 class="page-title">Page : Suivi de projet</h1>
+  <p>Cette page regroupe deux traces liées au suivi de projet : l'utilisation d'un <strong>gestionnaire de code source (GDS)</strong> et l'utilisation d'un <strong>outil de suivi de projet</strong>. Un bilan global y est associé.</p>
 
-        <!-- ========================================== -->
-        <!-- PAGE 3 : SUIVI DE PROJET (Même structure) -->
-        <!-- ========================================== -->
-        <section id="suivi-de-projet" class="page-section">
-            <h1>Page : Suivi de Projet</h1>
-            <p class="resume-page"><!-- Court texte résumant le contenu des sous-pages --></p>
+  <nav class="sub-nav">
+    <button type="button" class="active" data-target="trace1">Trace 1 — GDS</button>
+    <button type="button" data-target="trace2">Trace 2 — Suivi de projet</button>
+    <button type="button" data-target="bilan">Bilan & analyse</button>
+  </nav>
 
-            <!-- NAVIGATION SECONDAIRE (Identique à la page Technique) -->
-            <nav class="sub-nav">
-                <a href="#suivi-souspage-desc1">Trace 2 : Planification</a>
-                <a href="#suivi-souspage-bilan1">Bilan : Gestion de projet</a>
-            </nav>
+  <p class="subpage-switch-hint">Utilise les boutons pour changer de contenu sans faire défiler toute la page.</p>
 
-            <div class="subpage-display">
-                <!-- Remplir ici avec le même modèle de sous-pages (Description ou Bilan) adapté au Suivi de projet -->
-                <p style="color: #64748b; font-style: italic;">[Utiliser la même structure de sous-pages que la page Technique]</p>
-            </div>
-        </section>
+  <!-- ============ TRACE 1 ============ -->
+  <section id="trace1" class="subpage-content active" data-subpage="trace1">
+    <h2>Sous-page — Trace 1 : Utilisation du gestionnaire de code source</h2>
 
+    <h3>Savoir-faire élémentaires mobilisés</h3>
+    <ul class="sf-list">
+      <li><span class="sf sf-bleu">Versionner son code (commits, branches)</span></li>
+      <li><span class="sf sf-vert">Collaborer via un dépôt partagé</span></li>
+      <li><span class="sf sf-orange">Documenter ses modifications</span></li>
+    </ul>
+
+    <div class="trace-layout">
+      <div class="trace-media">
+        <div class="trace-zone">
+          <img src="image/GDS.png" alt="Trace 1 - Gestionnaire de code source">
+        </div>
+        <p class="trace-legend"><strong>Trace n°1 :</strong> Historique du dépôt Git du projet [à compléter]</p>
+      </div>
+
+      <div class="trace-content">
+        <h3>Descriptif général</h3>
+        <p>La Trace n°1 illustre l'utilisation quotidienne du gestionnaire de code source pendant le stage. Elle montre l'organisation du travail à travers les commits et branches, qui m'a permis de collaborer efficacement avec l'équipe.</p>
+
+        <h3>Descriptif des savoir-faire</h3>
+        <p>J'ai <span class="sf sf-bleu">versionné mon code</span> régulièrement via des commits ciblés (repère [A] de la Trace n°1), <span class="sf sf-vert">collaboré sur le dépôt partagé</span> via merges et pull requests (repère [B]) et veillé à <span class="sf sf-orange">documenter mes modifications</span> avec des messages clairs (repère [C]).</p>
+      </div>
     </div>
+  </section>
+
+  <!-- ============ TRACE 2 ============ -->
+  <section id="trace2" class="subpage-content" data-subpage="trace2">
+    <h2>Sous-page — Trace 2 : Page Suivi de projet</h2>
+
+    <h3>Savoir-faire élémentaires mobilisés</h3>
+    <ul class="sf-list">
+      <li><span class="sf sf-bleu">Découper un projet en tâches</span></li>
+      <li><span class="sf sf-vert">Suivre l'avancement d'un projet</span></li>
+      <li><span class="sf sf-orange">Prioriser les travaux</span></li>
+    </ul>
+
+    <div class="trace-layout">
+      <div class="trace-media">
+        <div class="trace-zone">[Insérer ici la capture du tableau de suivi — Jira, Trello, GitLab board, Gantt. Cadres : A = tâche, B = colonne d'avancement, C = priorité]</div>
+        <p class="trace-legend"><strong>Trace n°2 :</strong> Tableau de bord de suivi du projet</p>
+      </div>
+
+      <div class="trace-content">
+        <h3>Descriptif général</h3>
+        <p>La Trace n°2 représente l'outil utilisé pour organiser et suivre l'avancement du projet pendant le stage. Elle met en évidence la manière dont les tâches étaient découpées et hiérarchisées.</p>
+
+        <h3>Descriptif des savoir-faire</h3>
+        <p>J'ai participé au <span class="sf sf-bleu">découpage du projet en tâches</span> (repère [A] de la Trace n°2), au <span class="sf sf-vert">suivi de leur avancement</span> via les différentes colonnes du tableau (repère [B]), et à la <span class="sf sf-orange">priorisation</span> des travaux (repère [C]) afin de respecter les délais.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BILAN ============ -->
+  <section id="bilan" class="subpage-content" data-subpage="bilan">
+    <h2>Sous-page — Bilan & analyse</h2>
+
+    <div class="bilan-block">
+      <h3>Savoir-faire général n°1 : Utiliser des outils de suivi et de gestion de projet</h3>
+
+      <p><strong>Résumé des savoir-faire élémentaires associés :</strong></p>
+      <ul class="sf-list">
+        <li><strong>Rappel du contexte :</strong> illustré par les <em>Traces n°1 et n°2</em>, présentes tout au long du stage.</li>
+        <li><strong>Contexte d'apprentissage :</strong> introduction à Git en BUT 1 ; les outils de gestion de projet ont été découverts plus en profondeur durant le stage.</li>
+        <li><strong>Difficultés rencontrées :</strong> adopter de bonnes habitudes (commits réguliers et explicites, mise à jour du tableau de suivi).</li>
+      </ul>
+
+      <p><strong>Évaluation justifiée :</strong></p>
+      <p>Niveau avant le stage : <span class="niveau">Moyen</span> &nbsp;→&nbsp; Niveau après : <span class="niveau">Bon</span></p>
+      <p>L'usage quotidien de ces outils m'a permis d'en intégrer les réflexes plutôt que de les utiliser uniquement par obligation.</p>
+    </div>
+
+    <div class="bilan-block">
+      <h3>Savoir-faire général n°2 : Organiser son travail dans le temps</h3>
+
+      <p><strong>Résumé des savoir-faire élémentaires associés :</strong></p>
+      <ul class="sf-list">
+        <li><strong>Rappel du contexte :</strong> particulièrement visible dans la <em>Trace n°2</em>, où les tâches sont planifiées et priorisées.</li>
+        <li><strong>Contexte d'apprentissage :</strong> appris essentiellement sur le terrain, au contact de mon tuteur et de l'équipe.</li>
+        <li><strong>Difficultés rencontrées :</strong> estimer correctement la durée d'une tâche, ajuster la planification face aux imprévus.</li>
+      </ul>
+
+      <p><strong>Évaluation justifiée :</strong></p>
+      <p>Niveau avant le stage : <span class="niveau">Faible à moyen</span> &nbsp;→&nbsp; Niveau après : <span class="niveau">Bon</span></p>
+      <p>Le stage a fortement contribué à structurer ma façon de travailler, en particulier sur l'estimation des tâches.</p>
+    </div>
+  </section>
+</main>
+
+<footer>Portfolio BUT 2 - [PRÉNOM] [NOM]</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
-
