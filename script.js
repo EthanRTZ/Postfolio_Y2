@@ -28,4 +28,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const initialButton = buttons.find((button) => button.classList.contains('active')) || buttons[0];
     setActive(initialButton.dataset.target);
   });
+
+  const traceImages = document.querySelectorAll('.trace-zone img');
+
+  if (!traceImages.length) {
+    return;
+  }
+
+  const overlay = document.createElement('div');
+  overlay.className = 'image-overlay';
+  overlay.innerHTML = `
+    <button type="button" class="image-overlay-close" aria-label="Fermer l'image">×</button>
+    <img class="image-overlay-content" alt="Image de trace agrandie">
+  `;
+
+  const overlayImage = overlay.querySelector('.image-overlay-content');
+  const closeButton = overlay.querySelector('.image-overlay-close');
+
+  const closeOverlay = () => {
+    overlay.classList.remove('open');
+    document.body.classList.remove('overlay-open');
+    overlayImage.removeAttribute('src');
+  };
+
+  traceImages.forEach((image) => {
+    image.addEventListener('click', () => {
+      overlayImage.src = image.src;
+      overlayImage.alt = image.alt || 'Image de trace agrandie';
+      document.body.classList.add('overlay-open');
+      overlay.classList.add('open');
+    });
+  });
+
+  overlay.addEventListener('click', (event) => {
+    if (event.target === overlay) {
+      closeOverlay();
+    }
+  });
+
+  closeButton.addEventListener('click', closeOverlay);
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && overlay.classList.contains('open')) {
+      closeOverlay();
+    }
+  });
+
+  document.body.appendChild(overlay);
 });
