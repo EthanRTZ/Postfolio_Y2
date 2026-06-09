@@ -12,12 +12,7 @@
   <div class="contact">Contact : <a href="mailto:adresse.mail@exemple.fr">adresse.mail@exemple.fr</a></div>
 </header>
 
-<nav class="main-nav">
-  <a href="index.html" class="active">Accueil</a>
-  <a href="technique.html">Technique</a>
-  <a href="suivi-de-projet.html">Suivi de projet</a>
-  <a href="integration.html">Intégration en entreprise</a>
-</nav>
+<nav id="site-nav" class="main-nav"></nav>
 
 <main>
   <h1 class="page-title">Bienvenue sur mon portfolio</h1>
@@ -29,26 +24,30 @@
   <h2>Contexte de l'entreprise</h2>
   <p>[À compléter : présentation de l'entreprise — secteur d'activité, taille, mission. Personnes impliquées dans le stage : tuteur, équipe, rôles. Moyens de travail mis à disposition : matériel, logiciels, environnement de développement, etc.]</p>
 
-  <div class="illu-accueil">[Illustration en rapport avec l'entreprise — logo, photo des locaux, schéma d'organisation…]</div>
+  <div class="illu-accueil">
+    <img src="image/SPI.webp" alt="Logo SPI de l'entreprise">
+  </div>
 
   <h2>Contexte du sujet</h2>
   <p>L'objectif u stage etait de creer un module de gestions des employes, le module etant demandées a plusieur reprise par les clients. l'enjeux est donc de creer et implementer ce module dans gestiflex, logiciel de l'entreprise. la seul contrainte etait que cela ressemble a une version prototype du module fait avec Acesse.</p>
 
-  <div class="illu-accueil">[Illustration liée au sujet — capture du projet, schéma fonctionnel…]</div>
+  <div class="illu-accueil">
+    <img src="image/SPI2.png" alt="Capture du projet SPI2">
+  </div>
 
   <h2>Synthèse des savoir-faire généraux</h2>
-  <p>Au cours de ce stage, j'ai été amené à mobiliser et développer plusieurs savoir-faire généraux, détaillés dans les pages suivantes :</p>
+  <p>Au cours de ce stage, j'ai été amené à mobiliser et développer les six savoir-faire généraux détaillés dans les bilans des pages suivantes :</p>
 
   <h3>Côté technique</h3>
   <ul class="sf-list">
     <li><a href="technique.html" class="sf-link">Savoir concevoir une solution informatique adaptée à un besoin</a></li>
-    <li><a href="technique.html" class="sf-link">Savoir développer et implémenter des solutions techniques</a> (incluant la manipulation de bases de données)</li>
+    <li><a href="technique.html" class="sf-link">Savoir développer et implémenter des solutions techniques</a></li>
   </ul>
 
   <h3>Côté suivi de projet</h3>
   <ul class="sf-list">
     <li><a href="suivi-de-projet.html" class="sf-link">Savoir utiliser des outils de suivi et de gestion de projet</a></li>
-    <li><a href="suivi-de-projet.html" class="sf-link">Savoir organiser son travail dans le temps</a></li>
+    <li><a href="suivi-de-projet.html" class="sf-link">Savoir organiser son travail dans un projet existant</a></li>
   </ul>
 
   <h3>Côté intégration en entreprise</h3>
@@ -60,7 +59,9 @@
   <p>D'autres savoir-faire secondaires (rédaction, communication, lecture de code existant…) ont également été mobilisés mais ne font pas l'objet d'un bilan dédié.</p>
 </main>
 
-<footer>Portfolio BUT 2 - Ethan Rietz</footer>
+<footer id="site-footer"></footer>
+
+<script src="layout.js"></script>
 
 </body>
 </html>
