@@ -7,12 +7,14 @@
 </head>
 <body>
 
-<header>
-  <h1>Ethan Rietz - Portfolio BUT 2</h1>
-  <div class="contact">Contact : <a href="mailto:adresse.mail@exemple.fr">ethan.rietz@gmail.com</a></div>
-</header>
+<iframe class="site-fragment header-fragment" src="header.html" title="En-tête du portfolio"></iframe>
 
-<nav id="site-nav" class="main-nav"></nav>
+<nav class="main-nav">
+  <a href="index.html">Accueil</a>
+  <a href="technique.html" class="active">Technique</a>
+  <a href="suivi-de-projet.html">Suivi de projet</a>
+  <a href="integration.html">Intégration en entreprise</a>
+</nav>
 
 <main class="trace-page">
   <h1 class="page-title">Page : Technique</h1>
@@ -221,9 +223,7 @@
   </section>
 </main>
 
-<footer id="site-footer"></footer>
-
-<script src="layout.js"></script>
+<iframe class="site-fragment footer-fragment" src="footer.html" title="Pied de page du portfolio"></iframe>
 <script src="script.js"></script>
 
 </body>
