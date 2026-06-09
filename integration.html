@@ -34,10 +34,9 @@
     <h3>Savoir-faire élémentaires</h3>
     <ul class="sf-list">
       <li><span class="sf sf-vert">Savoir utiliser un outil d'analyse de performance</span></li>
-      <li><span class="sf sf-orange">Savoir lire des indicateurs techniques d'exécution</span></li>
+      <li><span class="sf sf-orange">Savoir identifier une piste d'optimisation</span></li>
       <li><span class="sf sf-bleu">Savoir repérer un traitement consommateur de temps</span></li>
       <li><span class="sf sf-rouge">Savoir interpréter les résultats d'une analyse</span></li>
-      <li>Savoir identifier une piste d'optimisation</li>
     </ul>
 
     <div class="trace-layout">
@@ -45,23 +44,33 @@
         <div class="trace-zone">
           <img src="image/perf1.png" alt="Trace 1 - Performances">
         </div>
+        <div class="trace-zone">
+          <img src="image/perf2.png" alt="Trace 1 - Performances">
+        </div>
       </div>
+
+      
 
       <div class="trace-content">
         <h3>Repères colorés sur la trace</h3>
         <ul class="sf-list">
-          <li><span class="sf sf-vert">Encadré vert</span> : tableau principal des mesures de performance.</li>
-          <li><span class="sf sf-orange">Encadré orange</span> : graphique ou indicateur visuel synthétique.</li>
-          <li><span class="sf sf-bleu">Encadré bleu</span> : valeurs chiffrées détaillées d'exécution.</li>
-          <li><span class="sf sf-rouge">Encadré rouge</span> : traitement particulièrement coûteux ou zone critique.</li>
+          <li><span class="sf sf-rouge">Encadré rouge</span> : temps d'execution total d'une partie du code des different champs de la fenetre ainsi que le nombre de fois ou ils sont utilisés.</li>
+          <li><span class="sf sf-vert">Encadré vert</span> : temps d'execution par fonction, avec le temps par appel, le nombre d'appels et le temps total d'execution.</li>
+          
         </ul>
 
         <h3>Descriptif général de la trace</h3>
-        <p>Cette trace montre les résultats d'une analyse de performance réalisée sur l'application. Elle présente les traitements les plus consommateurs en temps d'exécution ainsi que plusieurs indicateurs associés, comme le temps total, le temps interne ou le nombre d'appels. Cette trace est importante car elle permet d'identifier les points sensibles de l'application et d'orienter les efforts d'amélioration.</p>
+        <p>Cette trace montre les résultats d'une analyse de performance réalisée sur l'application. 
+          Elle présente les traitements les plus consommateurs en temps d'exécution ainsi que plusieurs indicateurs associés, 
+          comme le temps total, le temps interne ou le nombre d'appels. Cette trace est importante car elle permet d'identifier les points 
+          sensibles de l'application et d'orienter les efforts d'amélioration.</p>
 
         <h3>Descriptif des savoir-faire</h3>
-        <p>L'<span class="sf sf-vert">encadré vert</span> met en évidence le tableau principal des mesures, ce qui montre ma capacité à utiliser un outil d'analyse de performance dans un contexte réel. L'<span class="sf sf-orange">encadré orange</span> attire l'attention sur une synthèse visuelle, illustrant mon aptitude à lire rapidement un indicateur global. L'<span class="sf sf-bleu">encadré bleu</span> met en avant les valeurs détaillées, ce qui montre que je sais lire des indicateurs techniques d'exécution. Enfin, l'<span class="sf sf-rouge">encadré rouge</span> souligne un traitement particulièrement coûteux, démontrant ma capacité à repérer une zone critique et à identifier une piste d'optimisation.</p>
+        <p>L'<span class="sf sf-rouge">encadré rouge</span> attire l'attention sur une synthèse visuelle , des temps d'execution les plus long de l'applications, ce qui montre que je sais interpreter et orienter mon travail à partir de ce type d'analyse 
+          L'<span class="sf sf-vert">encadré vert</span> met en avant les valeurs détaillées, ce qui montre que je sais lire des indicateurs techniques d'exécution et orienté mon travail en conséquence. 
+        </p>
       </div>
+      
     </div>
   </section>
 
@@ -74,30 +83,35 @@
       <li><span class="sf sf-orange">Savoir suivre l'exécution d'un traitement pas à pas</span></li>
       <li><span class="sf sf-bleu">Savoir observer l'état des variables pendant l'exécution</span></li>
       <li><span class="sf sf-rouge">Savoir rechercher l'origine d'un comportement anormal</span></li>
-      <li>Savoir comprendre du code existant à partir de son exécution réelle</li>
+      <li><span class="sf sf-violet">Savoir comprendre du code existant à partir de son exécution réelle</span></li>
     </ul>
 
     <div class="trace-layout">
       <div class="trace-media">
         <div class="trace-zone">
-          <img src="image/Debogeur2.png" alt="Trace 2 - Debogueur">
+          <img src="image/debogeure3.png" alt="Trace 2 - Debogueur">
         </div>
       </div>
 
       <div class="trace-content">
         <h3>Repères colorés sur la trace</h3>
         <ul class="sf-list">
-          <li><span class="sf sf-vert">Encadré vert</span> : zone de code en cours d'exécution.</li>
-          <li><span class="sf sf-orange">Encadré orange</span> : outil ou commandes de débogage.</li>
-          <li><span class="sf sf-bleu">Encadré bleu</span> : valeurs observées ou visualisation d'une donnée.</li>
-          <li><span class="sf sf-rouge">Encadré rouge</span> : pile d'appels, variable critique ou point d'arrêt important.</li>
+          <li><span class="sf sf-vert">Encadré vert</span> : zone de visualisation de l'enregistrement en cours (en l'occuerence le contrat qui est chargé en memoire et entrain d'etre lu).</li>
+          <li><span class="sf sf-orange">Encadré orange</span> : outil ou commandes de débogage comme le pas à pas ou excecuter jusqu'à un curseur.</li>
+          <li><span class="sf sf-bleu">Encadré bleu</span> : le point d'arrêt en rouge et la ligne qui va etre excecuté avec la fleche.</li>
+          <li><span class="sf sf-rouge">Encadré rouge</span> : liste des variable global et locale, fonction et element de WLangage avec leurs valeurs associée au moment de l'exécution.</li>
         </ul>
 
         <h3>Descriptif général de la trace</h3>
-        <p>Cette trace montre l'utilisation du débogueur dans l'environnement de développement. On y voit le code en cours d'exécution, les variables observées et les outils permettant de suivre le traitement pas à pas. Cette trace est importante car elle représente une méthode concrète de compréhension du fonctionnement de l'application et de recherche d'anomalies.</p>
+        <p>Cette trace montre l'utilisation du débogueur dans l'environnement de développement. On y voit le code en cours d'exécution, les variables observées et les outils 
+          permettant de suivre le traitement pas à pas. Cette trace est importante car elle représente une méthode concrète de compréhension du fonctionnement de 
+          l'application et de recherche d'anomalies.</p>
 
         <h3>Descriptif des savoir-faire</h3>
-        <p>L'<span class="sf sf-vert">encadré vert</span> met en évidence la zone de code suivie pendant l'exécution, ce qui montre ma capacité à utiliser un débogueur pour analyser un traitement. L'<span class="sf sf-orange">encadré orange</span> attire l'attention sur les commandes de débogage, illustrant mon aptitude à piloter l'exécution pas à pas. L'<span class="sf sf-bleu">encadré bleu</span> souligne les valeurs observées, ce qui montre que je sais vérifier l'état des variables à un instant donné. Enfin, l'<span class="sf sf-rouge">encadré rouge</span> met en avant un point critique comme une variable importante, une pile d'appels ou un point d'arrêt, démontrant ma capacité à rechercher l'origine d'un comportement anormal.</p>
+        <p>L'<span class="sf sf-vert">encadré vert</span> met en évidence la zone de code suivie pendant l'exécution, ce qui montre ma capacité à verifier la bonne lecture des données. 
+          L'<span class="sf sf-orange">encadré orange</span> attire l'attention sur les commandes de débogage, illustrant mon aptitude à piloter l'exécution pas à pas. 
+          L'<span class="sf sf-bleu">encadré bleu</span> Montre les element en cours d'exécution, ce qui montre ma capacité à observer le comportement de l'application. 
+          Enfin, l'<span class="sf sf-rouge">encadré rouge</span> met en evidence les valeurs des variables, ce qui montre ma capacité à analyser l'état de l'application à un instant donné.</p>
       </div>
     </div>
   </section>
