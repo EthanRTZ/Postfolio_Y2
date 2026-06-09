@@ -8,8 +8,8 @@
 <body>
 
 <header>
-  <h1>[PRÉNOM] [NOM] - Portfolio BUT 2</h1>
-  <div class="contact">Contact : <a href="mailto:adresse.mail@exemple.fr">adresse.mail@exemple.fr</a></div>
+  <h1>Ethan Rietz - Portfolio BUT 2</h1>
+  <div class="contact">Contact : <a href="mailto:adresse.mail@exemple.fr">ethan.rietz@gmail.com</a></div>
 </header>
 
 <nav class="main-nav">
@@ -21,175 +21,212 @@
 
 <main class="trace-page">
   <h1 class="page-title">Page : Technique</h1>
-  <p>Cette page regroupe quatre traces issues de mon activité technique : l'<strong>interface principale de gestion du personnel</strong>, un <strong>algorithme de lecture et de parsing de fichiers</strong>, la <strong>modélisation physique des données HFSQL</strong> et une <strong>requête statistique multicritère</strong>. Elles s'accompagnent d'un bilan global sur les deux savoir-faire généraux associés.</p>
+  <p>Cette page présente plusieurs traces liées à la dimension technique de mon stage. Elles montrent ma capacité à concevoir une application, développer des traitements métiers, structurer les données et exploiter des requêtes SQL dans un contexte professionnel. Les encadrés colorés présents sur les images permettent de mettre en évidence les points remarquables de chaque trace et de relier ces éléments aux savoir-faire mobilisés.</p>
 
   <nav class="sub-nav">
-    <button type="button" class="active" data-target="trace1">Trace 1 — Conception</button>
-    <button type="button" data-target="trace2">Trace 2 — Code & fichier</button>
-    <button type="button" data-target="trace3">Trace 3 — Base de données</button>
-    <button type="button" data-target="trace4">Trace 4 — Requête HFSQL</button>
+    <button type="button" class="active" data-target="trace1">Trace 1 - Interface principale</button>
+    <button type="button" data-target="trace2">Trace 2 - Code</button>
+    <button type="button" data-target="trace3">Trace 3 - Base de données</button>
+    <button type="button" data-target="trace4">Trace 4 - Requête SQL</button>
     <button type="button" data-target="bilan">Bilan & analyse</button>
   </nav>
 
-  <p class="subpage-switch-hint">Clique sur un bouton pour afficher le contenu correspondant sans allonger la page.</p>
+  <p class="subpage-switch-hint">Clique sur un bouton pour afficher la trace correspondante.</p>
 
-  <!-- ============ TRACE 1 ============ -->
   <section id="trace1" class="subpage-content active" data-subpage="trace1">
-    <h2>Sous-page — Trace 1 : Maquettage et ergonomie de la fenêtre principale de gestion du personnel (FEN_Base)</h2>
+    <h2>Trace 1 - Conception et organisation de la fenêtre principale de l'application</h2>
 
-    <h3>Savoir-faire élémentaires mobilisés</h3>
+    <h3>Savoir-faire élémentaires</h3>
     <ul class="sf-list">
-      <li><span class="sfe sfe-11">SFE 1.1</span> Maquetter une interface utilisateur (IHM) dense et ergonomique adaptée aux processus métiers de l'entreprise.</li>
-      <li><span class="sfe sfe-12">SFE 1.2</span> Implémenter des composants graphiques avancés (tables imbriquées et volets d'onglets) pour afficher des données relationnelles liées.</li>
+      <li><span class="sf sf-vert">Savoir organiser une interface de manière lisible et fonctionnelle</span></li>
+      <li><span class="sf sf-orange">Savoir structurer une fenêtre en zones cohérentes</span></li>
+      <li><span class="sf sf-rouge">Savoir intégrer différents composants graphiques dans une même interface</span></li>
+      <li><span class="sf sf-bleu">Savoir adapter une interface aux besoins utilisateurs</span></li>
+      <li>Savoir articuler navigation, affichage et actions dans une application</li>
     </ul>
 
     <div class="trace-layout">
       <div class="trace-media">
         <div class="trace-zone">
-          <img src="image/MainPage.png" alt="Trace 1 - Main page">
+          <img src="image/MainPage.png" alt="Trace 1 - Interface principale">
         </div>
-        <p class="trace-legend"><strong>Figure 1 :</strong> Capture d'écran de l'éditeur d'IHM de WinDev 2025 présentant la fenêtre principale FEN_Base en cours de conception, mettant en évidence l'agencement des onglets métiers et des tables d'affichage dynamique.</p>
       </div>
 
       <div class="trace-content">
-        <h3>Descriptif général</h3>
-        <p>La Trace 1 représente l'interface graphique pivot du logiciel de gestion des ressources humaines développé au cours de mon stage. Il s'agit de la fenêtre FEN_Base, conçue sous l'IDE WinDev 2025. Cette trace se situe au cœur de mon sujet de stage car l'application existante souffrait d'une ergonomie obsolète qui ralentissait la saisie des gestionnaires RH. L'objectif principal était de centraliser l'intégralité de la fiche d'un employé sur un seul écran fonctionnel sans imposer de défilement vertical (scrolling) à l'utilisateur, optimisant ainsi le flux de travail quotidien de l'entreprise.</p>
+        <h3>Repères colorés sur la trace</h3>
+        <ul class="sf-list">
+          <li><span class="sf sf-vert">Encadré vert</span> : structure générale de la fenêtre et répartition des grandes zones.</li>
+          <li><span class="sf sf-orange">Encadré orange</span> : zone de saisie et d'affichage des informations principales.</li>
+          <li><span class="sf sf-rouge">Encadré rouge</span> : actions ou éléments interactifs importants pour l'utilisateur.</li>
+          <li><span class="sf sf-bleu">Encadré bleu</span> : zone de tableau ou d'affichage des données associées.</li>
+        </ul>
+
+        <h3>Descriptif général de la trace</h3>
+        <p>Cette trace correspond à la fenêtre principale de l'application sur laquelle j'ai travaillé durant mon stage. Elle présente plusieurs zones fonctionnelles : un menu de navigation, une zone centrale de consultation et de modification, ainsi qu'un espace d'affichage de données complémentaires. Cette fenêtre occupe une place importante dans le projet car elle sert de point d'entrée pour l'utilisateur et regroupe plusieurs fonctionnalités essentielles.</p>
 
         <h3>Descriptif des savoir-faire</h3>
-        <p>Pour concevoir cette interface, j'ai dû mettre en application le <span class="sfe sfe-11">SFE 1.1</span>. Le point remarquable de cette conception est repérable par le <strong>[Repère A]</strong>, qui entoure la double rangée d'onglets superposés (Coordonnées, Informations personnelles, Contrat sur le premier niveau ; Enfant, Prévenir, Formations, Sensibilisation sur le second niveau). Cette disposition graphique a été choisie pour structurer logiquement les volumineuses données d'un salarié. Cela démontre ma capacité à organiser une grande quantité d'informations de manière compacte et intuitive.</p>
-        <p>De plus, j'ai appliqué le <span class="sfe sfe-12">SFE 1.2</span> au niveau du <strong>[Repère B]</strong>, qui encadre la table basse "TABLE_SansNom1" positionnée sous l'onglet "Enfant". Cet élément graphique sert à afficher de manière dynamique les ayants droit du salarié sélectionné dans la liste de gauche. Lors du clic sur un employé, un rafraîchissement automatique est déclenché pour l'affichage de ses enfants. Cela illustre ma maîtrise des liaisons de données directes entre l'IHM et le modèle relationnel sous-jacent, offrant une navigation fluide et contextuelle pour l'utilisateur final.</p>
+        <p>L'<span class="sf sf-vert">encadré vert</span> met en évidence l'organisation globale de la fenêtre. Il montre que j'ai su organiser une interface de manière lisible et fonctionnelle, en distinguant clairement les grandes zones de travail. L'<span class="sf sf-orange">encadré orange</span> correspond à la zone principale de saisie et d'affichage ; il illustre ma capacité à structurer une fenêtre en zones cohérentes et à intégrer plusieurs composants graphiques dans un même espace. L'<span class="sf sf-rouge">encadré rouge</span> met en avant les actions importantes proposées à l'utilisateur, ce qui montre que j'ai su articuler navigation, affichage et actions dans l'application. Enfin, l'<span class="sf sf-bleu">encadré bleu</span> souligne la présence d'une zone de données, ce qui traduit ma capacité à adapter l'interface aux besoins concrets de consultation et de gestion.</p>
       </div>
     </div>
   </section>
 
-  <!-- ============ TRACE 2 ============ -->
   <section id="trace2" class="subpage-content" data-subpage="trace2">
-    <h2>Sous-page — Trace 2 : Algorithme de lecture de fichiers et parsing de données de sécurité sociale en WLanguage</h2>
+    <h2>Trace 2 - Développement d'un traitement avec lecture de fichier et conditions métier</h2>
 
-    <h3>Savoir-faire élémentaires mobilisés</h3>
+    <h3>Savoir-faire élémentaires</h3>
     <ul class="sf-list">
-      <li><span class="sfe sfe-13">SFE 1.3</span> Manipuler des flux de données externes par l'ouverture, le parsing et la fermeture de fichiers physiques du système.</li>
-      <li><span class="sfe sfe-14">SFE 1.4</span> Développer des algorithmes de contrôle, d'extraction et de découpage de chaînes de caractères complexes.</li>
+      <li><span class="sf sf-vert">Savoir lire et parcourir un fichier texte</span></li>
+      <li><span class="sf sf-orange">Savoir exploiter une donnée lue dans un traitement métier</span></li>
+      <li><span class="sf sf-bleu">Savoir écrire une structure conditionnelle complexe</span></li>
+      <li><span class="sf sf-rouge">Savoir manipuler des chaînes de caractères</span></li>
+      <li>Savoir affecter des valeurs en fonction de règles métier</li>
+      <li>Savoir développer un traitement robuste et compréhensible</li>
     </ul>
 
     <div class="trace-layout">
       <div class="trace-media">
         <div class="trace-zone">
-          <img src="image/Code.png" alt="Trace 2 - Extrait de code">
+          <img src="image/Code.png" alt="Trace 2 - Code">
         </div>
-        <p class="trace-legend"><strong>Figure 2 :</strong> Code source WLanguage extrait de l'événement d'initialisation de la variable de saisie SAI_NSecu, gérant l'ouverture d'un référentiel de codes INSEE externes et l'extraction algorithmique du lieu de naissance.</p>
       </div>
 
       <div class="trace-content">
-        <h3>Descriptif général</h3>
-        <p>La Trace 2 expose une section algorithmique écrite en WLanguage, intégrée derrière l'IHM de la Trace 1. Cette portion de code est exécutée lors de la saisie du numéro de sécurité sociale d'un employé. Dans le cadre de mon stage, il était primordial d'automatiser au maximum la saisie pour éviter les erreurs humaines. Ce script permet d'analyser le numéro de sécurité sociale saisi pour en extraire instantanément le pays ou le département de naissance, et interroger un fichier plat externe contenant les correspondances officielles de l'INSEE.</p>
+        <h3>Repères colorés sur la trace</h3>
+        <ul class="sf-list">
+          <li><span class="sf sf-vert">Encadré vert</span> : bloc principal de traitement et logique générale.</li>
+          <li><span class="sf sf-orange">Encadré orange</span> : structure conditionnelle importante.</li>
+          <li><span class="sf sf-bleu">Encadré bleu</span> : extraction ou manipulation d'une donnée précise.</li>
+          <li><span class="sf sf-rouge">Encadré rouge</span> : point sensible de contrôle ou branche métier particulière.</li>
+        </ul>
+
+        <h3>Descriptif général de la trace</h3>
+        <p>Cette trace montre un extrait de code utilisé pour exploiter des informations lues dans un fichier et en déduire certaines valeurs métier, comme un pays ou une localisation. Le traitement repose sur plusieurs conditions, sur l'analyse de chaînes de caractères et sur l'affectation finale de valeurs utiles à l'application. Cette trace est représentative de mon travail de développement car elle combine lecture de données, logique métier et traitement conditionnel.</p>
 
         <h3>Descriptif des savoir-faire</h3>
-        <p>L'implémentation de cette routine a nécessité la validation du <span class="sfe sfe-13">SFE 1.3</span>. Comme le montre le <strong>[Repère A]</strong> fléché sur les lignes 53, 69 (<code>fLitLigne</code>) et 83 (<code>fFerme</code>), le programme ouvre un canal de lecture vers un fichier physique du disque représentant le référentiel des codes pays étrangers ("insee etranger"). Le code gère proprement le parcours itératif du fichier ligne par ligne via une boucle <code>TANTQUE</code> jusqu'à la fin de fichier (<code>EOT</code>), puis libère impérativement la ressource système avec la fonction <code>fFerme</code>. Cela démontre une rigueur dans la gestion des entrées/sorties pour éviter les fuites de mémoire.</p>
-        <p>Parallèlement, j'ai mobilisé le <span class="sfe sfe-14">SFE 1.4</span> mis en évidence dans le <strong>[Repère B]</strong> (lignes 53, 58, 71 et les fonctions <code>Milieu</code> aux lignes 61 et 75). Le programme isole précisément des sous-chaînes textuelles grâce à la syntaxe WLanguage <code>SAI_NSecu[[6 À 10]]</code> pour extraire le code de naissance. Si le code commence par "99", la fonction <code>Milieu</code> extrait le libellé textuel correspondant dans la ligne lue du fichier externe. Sinon, il applique un traitement distinct pour la France métropolitaine. Ce découpage précis prouve ma capacité à manipuler et contrôler la donnée textuelle brute afin de la transformer en information structurée pour l'application.</p>
+        <p>L'<span class="sf sf-vert">encadré vert</span> met en évidence le bloc principal du traitement. Il montre que je sais développer un traitement structuré et compréhensible, en organisant les différentes étapes de manière logique. L'<span class="sf sf-orange">encadré orange</span> souligne une condition métier importante, ce qui illustre ma capacité à écrire une structure conditionnelle complexe pour distinguer plusieurs cas d'usage. L'<span class="sf sf-bleu">encadré bleu</span> met en avant une opération de manipulation de chaîne ou d'extraction de donnée ; cela montre que je sais exploiter une donnée lue dans un traitement métier et manipuler précisément son contenu. Enfin, l'<span class="sf sf-rouge">encadré rouge</span> signale un point de contrôle sensible, révélant ma capacité à appliquer des règles métier spécifiques de façon fiable.</p>
       </div>
     </div>
   </section>
 
-  <!-- ============ TRACE 3 ============ -->
   <section id="trace3" class="subpage-content" data-subpage="trace3">
-    <h2>Sous-page — Trace 3 : Modélisation et Schéma Physique des Données de l'application sous HFSQL</h2>
+    <h2>Trace 3 - Structuration et organisation des données dans l'application</h2>
 
-    <h3>Savoir-faire élémentaires mobilisés</h3>
+    <h3>Savoir-faire élémentaires</h3>
     <ul class="sf-list">
-      <li><span class="sfe sfe-21">SFE 2.1</span> Traduire des règles métiers complexes en un schéma relationnel de base de données (tables, clés primaires, clés étrangères et cardinalités).</li>
-      <li><span class="sfe sfe-22">SFE 2.2</span> Garantir la cohérence globale et l'intégrité référentielle des données persistées.</li>
-      <li><span class="sfe sfe-23">SFE 2.3</span> Optimiser les performances de requêtage par la mise en place d'index (clés de recherche) stratégiques.</li>
+      <li><span class="sf sf-vert">Savoir identifier les données utiles au fonctionnement d'une application</span></li>
+      <li><span class="sf sf-orange">Savoir structurer des données de façon cohérente</span></li>
+      <li><span class="sf sf-bleu">Savoir relier les informations entre elles</span></li>
+      <li><span class="sf sf-rouge">Savoir comprendre l'organisation des données dans un environnement existant</span></li>
+      <li>Savoir exploiter une structure de données au service de l'application</li>
     </ul>
 
     <div class="trace-layout">
       <div class="trace-media">
         <div class="trace-zone">
-          <img src="image/SystementHFSQL.png" alt="Trace 3 - Système HFSQL">
+          <img src="image/SystementHFSQL.png" alt="Trace 3 - Base de donnees">
         </div>
-        <p class="trace-legend"><strong>Figure 3 :</strong> Schéma d'Analyse (MLD/MPD) généré sous l'environnement WinDev 2025 détaillant la structure relationnelle de la base de données HFSQL, l'organisation de ses tables pivots et ses contraintes d'intégrité.</p>
       </div>
 
       <div class="trace-content">
-        <h3>Descriptif général</h3>
-        <p>La Trace 3 correspond au Schéma Physique des Données (SPD) de la base de données relationnelle client/serveur HFSQL mise en place pour l'application. Elle est le socle absolu de tout mon projet de stage. Sans une base correctement modélisée, l'application ne pouvait pas assurer le suivi rigoureux des contrats, des visites médicales, des formations ou des fiches de postes des salariés. Cette trace montre l'ensemble des fichiers de données requis et la manière dont ils s'articulent pour répondre aux exigences fonctionnelles du service RH.</p>
+        <h3>Repères colorés sur la trace</h3>
+        <ul class="sf-list">
+          <li><span class="sf sf-vert">Encadré vert</span> : ensemble principal représentant la structure globale des données.</li>
+          <li><span class="sf sf-orange">Encadré orange</span> : élément ou groupe de données central dans l'application.</li>
+          <li><span class="sf sf-bleu">Encadré bleu</span> : relation, champ ou information exploitée dans un traitement.</li>
+          <li><span class="sf sf-rouge">Encadré rouge</span> : contrainte ou point critique de cohérence des données.</li>
+        </ul>
+
+        <h3>Descriptif général de la trace</h3>
+        <p>Cette trace correspond à la partie base de données utilisée dans le projet. Elle illustre la manière dont les informations manipulées par l'application sont organisées, stockées et reliées entre elles. La base de données occupe une place centrale dans le fonctionnement global du projet, car elle permet de conserver et retrouver les informations nécessaires aux différentes fonctionnalités.</p>
 
         <h3>Descriptif des savoir-faire</h3>
-        <p>Ce schéma concrétise le <span class="sfe sfe-21">SFE 2.1</span>. Le point remarquable visible au <strong>[Repère A]</strong> montre la centralisation du modèle autour de la table pivot <code>employees</code>, identifiée de manière unique par sa clé primaire <code>IDEmployees</code>. Toutes les informations périphériques (visites médicales, congés, contrats, enfants) gravitent autour de cette table. C'est la traduction exacte de la règle métier fondamentale : "Chaque information du système doit être rattachée de façon unique à un collaborateur".</p>
-        <p>Le <span class="sfe sfe-22">SFE 2.2</span> est illustré au niveau du <strong>[Repère B]</strong>, qui encadre les flèches de liaison bleues équipées de leurs cardinalités (comme le lien entre <code>employees</code> et <code>Contrat</code> ou <code>Enfant</code> affichant <code>0,n</code> et <code>1,1</code>). Ces cardinalités traduisent des contraintes strictes : un contrat appartient obligatoirement à un et un seul employé (<code>1,1</code>), tandis qu'un employé peut avoir fait l'objet de plusieurs contrats successifs au cours de son historique dans l'entreprise (<code>0,n</code>).</p>
-        <p>Enfin, le <span class="sfe sfe-23">SFE 2.3</span> est repérable via le <strong>[Repère C]</strong>, fléché sur les petites icônes jaunes "AZ" et "09" situées devant les rubriques (ex: <code>AZ Nom</code> et <code>AZ Prenom</code> de la table <code>employees</code>). Ces icônes attestent de la création d'index textuels et numériques. J'ai configuré ces index pour accélérer de manière significative les filtres de recherche multi-critères implémentés dans l'IHM, évitant un parcours séquentiel complet de la table lors des requêtes sur de gros volumes de données.</p>
+        <p>L'<span class="sf sf-vert">encadré vert</span> permet d'identifier la structure générale des données, ce qui montre ma capacité à comprendre l'organisation d'ensemble d'une base exploitée dans un projet existant. L'<span class="sf sf-orange">encadré orange</span> met en avant une zone centrale de la structure, illustrant mon aptitude à identifier les données utiles au fonctionnement de l'application. L'<span class="sf sf-bleu">encadré bleu</span> souligne une information ou une relation exploitée dans un traitement, ce qui montre que je sais relier les informations entre elles et les utiliser de façon cohérente. Enfin, l'<span class="sf sf-rouge">encadré rouge</span> attire l'attention sur un point critique de cohérence, révélant ma compréhension des contraintes importantes liées aux données.</p>
       </div>
     </div>
   </section>
 
-  <!-- ============ TRACE 4 ============ -->
   <section id="trace4" class="subpage-content" data-subpage="trace4">
-    <h2>Sous-page — Trace 4 : Conception d'une requête d'extraction SQL statistique multicritère paramétrée</h2>
+    <h2>Trace 4 - Création et utilisation d'une requête SQL dans l'application</h2>
 
-    <h3>Savoir-faire élémentaires mobilisés</h3>
+    <h3>Savoir-faire élémentaires</h3>
     <ul class="sf-list">
-      <li><span class="sfe sfe-24">SFE 2.4</span> Traduire une spécification fonctionnelle ou une règle métier client en critères logiques d'extraction.</li>
-      <li><span class="sfe sfe-25">SFE 2.5</span> Mettre en œuvre des fonctions d'agrégation SQL pour synthétiser des données et alimenter des tableaux de bord.</li>
-      <li><span class="sfe sfe-26">SFE 2.6</span> Maîtriser la syntaxe du langage SQL standard (jointures, clauses restrictives) et mettre en œuvre des paramètres dynamiques sécurisés.</li>
+      <li><span class="sf sf-vert">Savoir écrire une requête SQL adaptée à un besoin</span></li>
+      <li><span class="sf sf-orange">Savoir sélectionner les données pertinentes</span></li>
+      <li><span class="sf sf-bleu">Savoir filtrer des résultats selon des critères</span></li>
+      <li><span class="sf sf-rouge">Savoir intégrer une requête dans une application</span></li>
+      <li>Savoir exploiter les résultats d'une requête dans un traitement ou un affichage</li>
     </ul>
 
     <div class="trace-layout">
       <div class="trace-media">
         <div class="trace-zone">
-          <img src="image/RequeteHFSQL.png" alt="Trace 4 - Requête HFSQL">
+          <img src="image/RequeteHFSQL.png" alt="Trace 4 - Requete SQL">
         </div>
-        <p class="trace-legend"><strong>Figure 4 :</strong> Éditeur visuel et textuel de requêtes WinDev affichant la configuration de REQ_CalculQualiff, mettant en lumière le texte fonctionnel en langage naturel, le paramétrage de l'agrégat COUNT et le code SQL sous-jacent.</p>
       </div>
 
       <div class="trace-content">
-        <h3>Descriptif général</h3>
-        <p>La Trace 4 illustre l'outil d'exploitation directe de la base de données présentée en Trace 3. Il s'agit de la requête REQ_CalculQualiff, ouverte dans l'éditeur de requêtes intégré. Durant mon stage, la direction avait besoin d'obtenir des statistiques précises pour l'élaboration du bilan social de l'entreprise, notamment le décompte des salariés actifs par type de contrat (CDI/CDD), par société du groupe et par qualification professionnelle. Cette trace montre comment j'ai construit graphiquement et textuellement cette extraction complexe pour alimenter l'état d'impression "ETAT_CalculParQualif".</p>
+        <h3>Repères colorés sur la trace</h3>
+        <ul class="sf-list">
+          <li><span class="sf sf-vert">Encadré vert</span> : structure générale de la requête.</li>
+          <li><span class="sf sf-orange">Encadré orange</span> : clause de filtrage ou de jointure importante.</li>
+          <li><span class="sf sf-bleu">Encadré bleu</span> : champ ou donnée récupérée pour le traitement.</li>
+          <li><span class="sf sf-rouge">Encadré rouge</span> : condition déterminante pour obtenir le bon résultat.</li>
+        </ul>
+
+        <h3>Descriptif général de la trace</h3>
+        <p>Cette trace correspond à une requête SQL utilisée dans l'application pour récupérer des informations précises à partir de la base de données. Elle s'inscrit dans le fonctionnement quotidien du projet, car elle permet d'afficher, filtrer ou manipuler des données selon le besoin de l'utilisateur ou du traitement métier.</p>
 
         <h3>Descriptif des savoir-faire</h3>
-        <p>J'ai validé le <span class="sfe sfe-24">SFE 2.4</span> comme le prouve le <strong>[Cadre Bleu]</strong> en haut à gauche. Ce cadre entoure la spécification générée automatiquement en langage naturel. On y lit l'analyse logique du besoin : compter les employés non nuls dont la société, la qualification et le statut correspondent exactement à des filtres précis. Cela démontre ma capacité à comprendre la demande métier d'un DRH et à la transcrire en une logique de filtrage informatique booléenne rigoureuse.</p>
-        <p>De plus, le <span class="sfe sfe-25">SFE 2.5</span> est parfaitement visible dans le <strong>[Cadre Vert]</strong> central. J'y ai configuré la fonction d'agrégation <code>COUNT(employes.IDEmployes)</code>, renommée "Comptage_1". Au lieu de charger en mémoire des milliers de lignes de salariés pour les dénombrer par programmation, la base calcule elle-même le total regroupé, ce qui optimise drastiquement le temps d'exécution et la bande passante réseau pour la génération des tableaux de bord.</p>
-        <p>Pour finir, la preuve du <span class="sfe sfe-26">SFE 2.6</span> est apportée par le <strong>[Cadre Rouge]</strong> en bas de l'écran. Il expose le code SQL natif généré : l'utilisation d'une jointure interne relationnelle <code>FROM employes INNER JOIN Contrat ON employes.IDEmployes = Contrat.IDEmployes</code> pour lier les deux fichiers de données indispensables, ainsi que l'injection de variables dynamiques de filtrage placées entre accolades <code>{ParamSocieteContrat}</code>. Ce mécanisme garantit la réutilisabilité de la requête sécurisée contre les injections de données invalides.</p>
+        <p>L'<span class="sf sf-vert">encadré vert</span> met en avant la structure d'ensemble de la requête, ce qui montre ma capacité à écrire une requête SQL adaptée à un besoin concret. L'<span class="sf sf-orange">encadré orange</span> souligne une clause importante de filtrage ou de jointure, illustrant mon aptitude à sélectionner les bonnes données selon un critère précis. L'<span class="sf sf-bleu">encadré bleu</span> correspond à un champ exploité dans le résultat, ce qui montre que je sais récupérer et utiliser des informations pertinentes. Enfin, l'<span class="sf sf-rouge">encadré rouge</span> attire l'attention sur une condition essentielle de la requête, démontrant ma capacité à construire une logique de sélection fiable.</p>
       </div>
     </div>
   </section>
 
-  <!-- ============ BILAN ============ -->
   <section id="bilan" class="subpage-content" data-subpage="bilan">
-    <h2>Sous-page — Bilan & analyse</h2>
+    <h2>Bilan / Analyse - Technique</h2>
 
     <div class="bilan-block">
-      <h3>Savoir-faire général n°1 : Concevoir et développer une application cliente robuste et ergonomique</h3>
+      <h3>Savoir-faire général 1 : Savoir concevoir une solution informatique adaptée à un besoin</h3>
+      <p><strong>Résumé des savoir-faire élémentaires associés :</strong> ce savoir-faire général regroupe les compétences liées à l'organisation d'une interface, à la structuration d'une application et à la compréhension des éléments nécessaires à son fonctionnement. Il s'appuie notamment sur la capacité à organiser une fenêtre, intégrer des composants, identifier les données utiles et construire une solution cohérente.</p>
 
-      <p><strong>Résumé des savoir-faire élémentaires associés :</strong></p>
+      <p><strong>Traces associées :</strong></p>
       <ul class="sf-list">
-        <li><strong>Rappel du contexte :</strong> ce bloc d'analyse s'appuie sur la complémentarité de la <em>Trace 1</em> (Interface Graphique de <code>FEN_Base</code>) et de la <em>Trace 2</em> (Code algorithmique d'extraction WLanguage).</li>
-        <li><strong>Contexte d'apprentissage :</strong> les concepts théoriques de base concernant la programmation événementielle et les structures algorithmiques conditionnelles ont été étudiés lors des modules de développement logiciel du BUT 2 Informatique, tandis que WinDev et le WLanguage ont été appris en autonomie durant les premières semaines du stage.</li>
-        <li><strong>Difficultés rencontrées :</strong> la gestion de l'ergonomie visuelle de l'IHM, la superposition de deux niveaux d'onglets métiers et l'optimisation du parsing du fichier externe.</li>
+        <li>Trace 1 : main page / interface principale</li>
+        <li>Trace 3 : base de données</li>
       </ul>
 
-      <p><strong>Évaluation justifiée :</strong></p>
-      <p>Niveau avant le stage : <span class="niveau">Intermédiaire</span> &nbsp;→&nbsp; Niveau après : <span class="niveau">Excellent</span></p>
-      <p>Avant mon entrée en stage, mon expérience en développement d'applications graphiques de gestion se limitait à des projets académiques restreints. Grâce à ce travail concret associant un design d'IHM dense (Trace 1) à une logique algorithmique de parsing robuste (Trace 2), je suis aujourd'hui capable de concevoir des fenêtres professionnelles hautement optimisées pour un flux métier d'entreprise.</p>
+      <p><strong>Rappel du contexte d'utilisation :</strong> ce savoir-faire a été mobilisé lors de la conception de l'interface et dans la compréhension de la structure des données nécessaires au projet.</p>
+      <p><strong>Contexte d'apprentissage :</strong> une partie de ces compétences a été abordée en cours, notamment dans le cadre des projets de développement et de base de données. Le stage m'a permis de les réinvestir dans un contexte professionnel plus concret.</p>
+      <p><strong>Difficultés d'apprentissage et/ou d'utilisation :</strong> la difficulté principale a été de concevoir une solution cohérente dans un environnement existant, en tenant compte à la fois des contraintes techniques, des besoins utilisateurs et de l'organisation déjà en place.</p>
+
+      <p><strong>Évaluation justifiée du niveau :</strong></p>
+      <p>Niveau avant le stage : <span class="niveau">Moyen</span> &nbsp;→&nbsp; Niveau après : <span class="niveau">Bon</span></p>
+      <p>Avant le stage, mon niveau était moyen. Après cette expérience, j'estime avoir atteint un bon niveau, car je suis davantage capable de penser une solution dans son ensemble et pas seulement élément par élément.</p>
     </div>
 
     <div class="bilan-block">
-      <h3>Savoir-faire général n°2 : Modéliser, implémenter et exploiter une base de données relationnelle</h3>
+      <h3>Savoir-faire général 2 : Savoir développer et implémenter des solutions techniques</h3>
+      <p><strong>Résumé des savoir-faire élémentaires associés :</strong> ce savoir-faire général regroupe les compétences mobilisées dans l'écriture de code, la lecture de fichier, la manipulation de chaînes, l'écriture de requêtes SQL et l'exploitation de données pour produire un résultat fonctionnel.</p>
 
-      <p><strong>Résumé des savoir-faire élémentaires associés :</strong></p>
+      <p><strong>Traces associées :</strong></p>
       <ul class="sf-list">
-        <li><strong>Rappel du contexte :</strong> ce second bloc associe la structure physique de la base de données (Trace 3) et son exploitation analytique concrète (Trace 4).</li>
-        <li><strong>Contexte d'apprentissage :</strong> la modélisation de base de données et l'écriture de requêtes SQL standardisées représentent le cœur des enseignements de l'axe Base de Données du BUT Informatique, puis ces connaissances ont été transposées sur le SGBD HFSQL de l'entreprise.</li>
-        <li><strong>Difficultés rencontrées :</strong> la traduction exacte des règles métiers au sein du schéma relationnel et la gestion de requêtes complexes avec plusieurs critères logiques.</li>
+        <li>Trace 2 : code</li>
+        <li>Trace 4 : requête SQL</li>
+        <li>Trace 3 : base de données</li>
       </ul>
 
-      <p><strong>Évaluation justifiée :</strong></p>
-      <p>Niveau avant le stage : <span class="niveau">Bon</span> &nbsp;→&nbsp; Niveau après : <span class="niveau">Très bien</span></p>
-      <p>Avant mon stage, je savais écrire des requêtes SQL théoriques sur des bases académiques. Le stage m'a confronté à la réalité d'un modèle d'entreprise réel comprenant plus de 20 tables interconnectées. En parvenant à sécuriser l'intégrité globale du système et en fournissant des outils de requêtage direct capables d'extraire des statistiques fiables en temps réel pour la direction, je maîtrise désormais l'intégralité du cycle de vie de la donnée.</p>
+      <p><strong>Rappel du contexte d'utilisation :</strong> ce savoir-faire a été mobilisé dans les traitements métiers de l'application et dans l'exploitation des données stockées.</p>
+      <p><strong>Contexte d'apprentissage :</strong> les bases ont été acquises en formation, mais leur mise en œuvre dans un projet existant m'a permis de progresser en rigueur et en autonomie.</p>
+      <p><strong>Difficultés d'apprentissage et/ou d'utilisation :</strong> les principales difficultés ont été de comprendre la logique métier déjà présente, d'écrire un traitement fiable et d'exploiter correctement les données disponibles.</p>
+
+      <p><strong>Évaluation justifiée du niveau :</strong></p>
+      <p>Niveau avant le stage : <span class="niveau">Moyen</span> &nbsp;→&nbsp; Niveau après : <span class="niveau">Bon</span></p>
+      <p>Avant le stage, mon niveau était moyen. Après le stage, je considère avoir progressé vers un niveau bon, car je sais mieux articuler code, données et contraintes métier.</p>
     </div>
   </section>
 </main>
 
-<footer>Portfolio BUT 2 - [PRÉNOM] [NOM]</footer>
+<footer>Portfolio BUT 2 - Ethan Rietz</footer>
 
 <script src="script.js"></script>
 
